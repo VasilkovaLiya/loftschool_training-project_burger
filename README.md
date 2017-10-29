@@ -5,3 +5,5 @@ loftschool_training project_burger homework
 **Наставник**: Самонова Маргарита
 
 **Курс**: Веб для начинающих **(10.2017)**
+
+**Ccылка на ДЗ**: https://vasilkovaliya.github.io/loftschool_training-project_burger/
