@@ -6,4 +6,4 @@ loftschool_training project_burger homework
 
 **Курс**: Веб для начинающих **(10.2017)**
 
-**Ccылка на ДЗ**: https://vasilkovaliya.github.io/loftschool_training-project_burger/
+**Ccылка на ДЗ, верстка еще в процессе**: https://vasilkovaliya.github.io/loftschool_training-project_burger/
