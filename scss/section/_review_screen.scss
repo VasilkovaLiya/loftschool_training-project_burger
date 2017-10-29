@@ -1,0 +1,69 @@
+.review_screen {
+	height: 100vh;	
+}
+.review__list{
+  height:100vh;
+  display: flex;
+  flex-wrap: wrap;
+  
+/*   обнуление стилей списка */
+  list-style: none;
+  padding: 0;
+}
+
+/* .review_item_pair { */
+  /* display: flex;   */
+/* } */
+
+.review_item {
+/* 	flex-grow: 1; */
+/* 	min-height:327px;
+	flex-basis:276px; */
+  width: 25%;
+  height: 50%;
+  overflow:hidden;
+  
+}
+.review_item1 {
+	background: url(../img/review_img_1_2.png) ;
+	background-size: cover;
+	background-clip: padding-box;
+	background-position: center center;
+	background-origin: content-box;	
+}
+.review_item2 {
+	background: url(../img/review_img_2.png) ;
+	background-size: cover;	
+background-clip: padding-box;	
+}
+.review_item3 {
+	background: url(../img/review_img_3_2.png) ;
+	background-size: cover;	
+background-clip: padding-box;	
+}
+.review_item4 {
+	background: url(../img/review_img_4.png) ;
+	background-size: cover;	
+background-clip: padding-box;	
+}
+.review_item5 {
+	background: url(../img/review_img_5.png) ;
+	background-size: cover;	
+background-clip: padding-box;	
+}
+.review_item6 {
+	background: url(../img/review_img_6.png) ;
+	background-size: cover;	
+background-clip: padding-box;	
+}
+.review_item7{
+	background: url(../img/review_img_7.png) ;
+	background-size: cover;	
+background-clip: padding-box;	
+}
+.review_item8 {
+	background: url(../img/review_img_8.png) ;
+	background-size: cover;
+background-clip: padding-box;	
+}
+

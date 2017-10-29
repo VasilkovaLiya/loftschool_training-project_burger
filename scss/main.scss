@@ -1,0 +1,11 @@
+//config
+
+// layout - базовые настройки
+
+@import "layout/_base.scss";
+@import "layout/_fonts.scss";
+
+//section -настройки секций
+@import "section/_first_screen";
+@import "section/_best_screen";
+@import "section/_review_screen";

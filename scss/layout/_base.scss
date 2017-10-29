@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    font-size: normal;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .order {
+	border-radius:5px;
+	padding:13px 15px 13px 15px;
+	background-color: #c1401e; 
+	align-items:baseline;
+} 
+
+.main_title {
+	font-family: 'gagalinregular';
+	font-size:calc(72px + 2vw);
+	color: #f9b43b;
+	
+}
