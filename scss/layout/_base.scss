@@ -11,10 +11,18 @@ h1, h2, h3, h4, h5 {
   
   .order {
 	border-radius:5px;
-	padding:13px 15px 13px 15px;
-	background-color: #c1401e; 
 	align-items:baseline;
+  width: 100px;
+  height: 38px;
+  background-color: #e45028;
+  display: flex;
+  
 } 
+
+.order-link {
+  margin: auto;
+  @extend .menu-fonts;
+}
 
 .main_title {
 	font-family: 'gagalinregular';
