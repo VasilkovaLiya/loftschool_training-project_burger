@@ -1,77 +1,238 @@
-
 .first_screen {
-	background-color: rgba(0,0,0,0.31);
-	background-image: url(../img/bg2.png);
+	background: url('../img/bg2.png') center center no-repeat;
 	background-size: cover;
 	height: 100vh;
-    //height: 100%;
-	//min-width: 940px;
-	//min-height: 650px;
-}
-
-.first_wrapper {
+	min-height: 650px;
 	display: flex;
-	width: 80%;
-	margin: 0 auto;
-	height: 100%;
 	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
+	
+
+  }
+
+//   .first_wrapper {
+// 	display: flex;
+// 	flex-direction: column;	
+// 	justify-content: space-between;
+// 	align-items: center;
+//   }
+  
+.first_wrapper {
+	position: relative;
 }
 
-
-.nav {
+  .header {
 	display: flex;
-	align-items:center;
+	align-items: center;
+  }
+  
+  .nav {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+  }
+  
+  .first_wrapper {
+	flex: 1;
+  }
+  
+  .we-do {
+	position: absolute;
+	top:25%;
+	flex: .8;
+	display: flex;
+	align-items: center;
+	
+	@include tablet {
+		flex-direction: column;
+		padding: 0 150px;
+	}
+  }
+	
+	// .we-do__img img {
+	// 	@include tablet {
+	// 		max-height: 360px;
+	// 	}
+	// } 
+
+  .we-do__descr {
+	color: #fff;
+			@include tablet {
+				text-align: center;
+				margin-top:50px;
 }
 
-.logo {
-	//flex: 0.5 1 auto;
-	margin-right:auto;
-}
 
-.menu {
+
+	}
+	
+	.menu {
+		
+		@include tablet {
+			display: none;
+		}
+	}
+
+  .menu__list {
+	display: flex;
+  }
+  
+  .menu__item {
+	&:last-child {
+		padding-right: 10px;
+	  .menu__link:after {
+		display: none;
+	  }
+	}
+
+  }
+  
+  .menu__link {
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+  
+	&:after {
+	  content: "";
+	  display: block;
+	  width: 4px;
+	  height: 4px;
+	  border-radius: 50%;
+	  background: #fff;   
+	  margin: 0 16px;
+	}
+  }
+	
+	.menu-hamburger-link {
+		display: flex;
+		flex-direction: column;
+
+	}
+	$lineWidth : 4;
+	
+	.hamb-icon {
+			display: none;
+			border-top: #{$lineWidth}px #fff solid;
+			border-bottom: #{$lineWidth}px #fff solid;
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+			position: relative;
+			margin: 10px 20px;
+			border-radius: 1px;
+		
+			&:before {
+					content: '';
+					display: inline-block;
+					position: absolute;
+					top: 50%;
+					left: 0px;
+					width: 100%;
+					border-top: #{$lineWidth}px #fff solid;
+					margin-top: -#{$lineWidth / 2}px;
+					border-radius: 1px;
+			}
+
+			@include tablet {
+				display: block;
+			}
+	}
+
+  .menu ul{
 	display: flex;
 	justify-content:center;
+	align-items: center;
 	
 }
 
 .menu-fonts {
 	font-family:'ubuntumedium';
 	text-transform: uppercase;
-	color:#fff;
-	font-size:17px;
+	font-size:rem(13px);
 }
 
-menu li {
-	padding-right:15px;
-	
+.we-do__img img {
+	max-width: 100%;
 }
 
-menu li:first-child {
-     list-style: none;	 
-}
-
-menu li:last-child {
-     list-style: none;	 
-}
-menu a {
-	color: #fff;
-	margin: 15px;
-}
-
-
-
-.burger-slider{
-	display: flex;
-	align-items:center;
-	justify-content:center;
-}
-
-
-.burger-slider_second-slogan {
+.we-do_second-slogan {
 	font-family: 'lifehackmedium';
-	font-size:calc(65px + 1.2vw);
+	font-size:rem(65px);
 	color: black;
 }
 
+.screen_scroll-down {
+	position: absolute;
+	bottom:5%;
+	left:50%;
+	
+}
+
+// .first_screen {
+// 	background-color: rgba(0,0,0,0.31);
+// 	background-image: url(../img/bg2.png);
+// 	background-size: cover;
+// 	height: 100vh;
+//     min-height: 650px;
+// }
+
+// .first_wrapper {
+// 	display: flex;
+// 	margin: 0 auto;
+// 	height: 100%;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	justify-content: space-between;
+// 	flex-wrap:wrap;
+// 	flex: 1;
+// 	border: 2px solid red;
+// }
+
+// header {
+// 	width:100%;
+// 	display: flex;
+// 	align-items:center;
+// 	justify-content:space-between;
+// 	flex-wrap:wrap;
+// }
+
+// .logo {
+// 	//flex: 0.5 1 auto;
+// 	margin-right:auto;
+// }
+// .nav {
+// 	display: flex;
+// 	align-items:center;
+// 	justify-content:center;
+// }
+
+
+// .menu__item {
+// 	&:last-child {
+// 	  .menu__link:after {
+// 		display: none;
+// 	  }
+// 	}
+//   }
+
+// .menu__link {
+// 	color: #fff;
+// 	text-decoration: none;
+// 	display: flex;
+// 	align-items: center;
+  
+// 	&:after {
+// 	  content: "";
+// 	  display: block;
+// 	  width: 4px;
+// 	  height: 4px;
+// 	  border-radius: 50%;
+// 	  background: #fff;   
+// 	  margin: 0px -10px 0px 15px;
+// 	}
+//   }
+  
+//   menu a {
+// 	color: #fff;
+// 	margin: rem(15px);
+// }

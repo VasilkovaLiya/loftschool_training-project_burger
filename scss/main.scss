@@ -1,12 +1,23 @@
 //config
 
-// layout - базовые настройки
+//resolutions
+$tablet:768px;
+$phone:480px;
 
+// layout - базовые настройки
+@import "layout/_media.scss";
 @import "layout/_base.scss";
 @import "layout/_fonts.scss";
+
+
+
+
 
 //section -настройки секций
 @import "section/_first_screen";
 @import "section/_best_screen";
 @import "section/_review_screen";
 @import "section/_team_screen";
+@import "section/_menu_screen";
+@import "section/_contacts_screen";
+@import "section/_order_screen";

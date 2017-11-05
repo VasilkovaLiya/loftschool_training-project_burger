@@ -9,7 +9,7 @@
     <meta name="description" content="Бургерная">
     <meta name="keywords" content="Бургеры">
     <meta name="generator" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 <link rel="stylesheet" href="css/normalize.css" />
@@ -27,32 +27,56 @@
 		<div class="maincontent">
 			<section class="screen first_screen">
 				<div class="wrapper first_wrapper">	
-					<header>
-						<nav class="nav">
-						
-							<div class="logo">
+					<header class="header">	
+							<div class="logo_container">						
 								<a href="" class="logo">
 								<img src="img/logo.svg" alt="Mr.Burger" class="logo_img" />
 								</a>
-							</div>	
-							<menu class="menu menu-fonts">
-									<li><a href="#">О нас</a></li>
-									<!-- <li class="dot">&bull;</li> -->
-									<li><a href="#">Бургеры</a></li>
-									<!-- <li class="dot">&bull;</li> -->
-									<li><a href="#">Команда</a></li>
-									<!-- <li class="dot">&bull;</li> -->
-									<li><a href="#">Меню</a></li>
-									<!-- <li class="dot">&bull;</li> -->
-									<li><a href="#">Отзывы</a></li>
-									<!-- <li class="dot">&bull;</li> -->
-									<li><a href="#">Контакты</a></li>
-									<!-- <li class="order"><a href="#">Заказать</a></li> -->
-									<!-- <li class="order">Заказать</li> -->
+							</div>
+							<div class="nav">	
+								<menu class="menu menu-fonts">
+									<ul class="menu_list">
+											<li class="menu__item">
+												<a href="#" class="menu__link">
+													О нас
+												</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link">
+												Бургеры
+												</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link">
+												Команда
+												</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link">
+												Меню
+												</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link">
+												Отзывы
+												</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__link">
+												Контакты
+												</a>
+											</li>
+									</ul>
+									
+								</menu>	
+								<div class="order"><a class="order-link" href="#">Заказать</a></div>
+								<div class="menu-hamburger-link">
+									<a href="#">	
+										<div class="hamb-icon"></div>																		
+									</a>							
 								
-							</menu>	
-							<div class="order"><a class="order-link" href="#">Заказать</a></div>
-						</nav>
+								</div>
+							</div>
 						
 						
 					</header>
@@ -70,13 +94,13 @@
 						<!-- </ul>	 -->
 					<!-- </div> -->
 
-					<div class="burger-slider">
-						<div class="burger-slider_burger_img_wrapper">
-							<img src="img/burger-photo.png" alt="Наш бургер" class="burger-slider_burger_img">
+					<div class="we-do">
+						<div class="we-do__img">
+							<img src="img/first/burger.png" alt="Наш бургер" class="burger-slider_burger_img">
 						</div>
-						<div class="burger-slider_burger_descrp">
+						<div class="we-do__descr">
 							<div class="main_title">Мы делаем</div>
-							<div class="burger-slider_second-slogan">натуральные бургеры</div>
+							<div class="we-do_second-slogan">натуральные бургеры</div>
 						</div>
 					</div>
 
@@ -117,61 +141,130 @@
 					<div class="wrapper team_wrapper">
 						<div class="accordeon_wrapper">
 							<div class="main_title_div">
-								<h2 class="main_title">Мы лучшие</h2>
+								<h2 class="main_title">Команда</h2>
 							</div>
-							<div class="accordeon">
-								<div class="accordeon_item">
-									<div>
+							<ul class="accordeon">
+								<li class="accordeon__item">
+									<a href="#" class="accordeon__trigger">
 										<p class="accordeon_name">Ричард Джеймс</p>
-									</div>
-									<div class="accordeon_descr">
-										<ul class="accordeon_descr-ul">
-											<li><img class="teamphoto" alt="фото сотрудника" src="/img/teamphoto.png" />
-											</li>
-											<li class="accordeon_descr-ul--li50px">
-												<h3>Оператор</h3> 
-												<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-											</li> 
-										</ul> 
-									</div> 
-								</div>
-								<div class="accordeon_item">
-										<div>
-											<p class="accordeon_name">Ричард Джеймс</p>
-										</div>
-										<div class="accordeon_descr">
-											<ul class="accordeon_descr-ul">
-												<li><img class="teamphoto" alt="фото сотрудника" src="/img/teamphoto.png" />
-												</li>
-												<li class="accordeon_descr-ul--li50px">
-													<h3>Оператор</h3> 
-													<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-												</li> 
-											</ul> 
-										</div> 
-									</div>
-								<div class="accordeon_item">
-									<div>
+									</a>
+									<!-- ниже у Сабанцева В. оформлено не списком, а дивом, при этом в блоке accordeon_text
+									выделены дивы title и content -->
+									<ul class="accordeon__descr">
+										<li><img class="accordeon__photo" alt="фото сотрудника" src="/img/teamphoto.png" />
+										</li>
+										
+										<li class="accordeon_text">
+											<h3>Оператор</h3> 
+											<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+										</li> 
+									</ul> 
+									
+								</li>
+								<li class="accordeon__item">
+									<a href="#" class="accordeon__trigger">
 										<p class="accordeon_name">Ричард Джеймс</p>
-									</div>
-									<div class="accordeon_descr">
-										<ul class="accordeon_descr-ul">
-											<li><img class="teamphoto" alt="фото сотрудника" src="/img/teamphoto.png" />
-											</li>
-											<li class="accordeon_descr-ul--li50px">
-												<h3>Оператор</h3> 
-												<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
-											</li> 
-										</ul> 
-									</div> 
-								</div>										
+									</a>
+									<!-- ниже у Сабанцева В. оформлено не списком, а дивом, при этом в блоке accordeon_text
+									выделены дивы title и content -->
+									<ul class="accordeon__descr">
+										<li><img class="accordeon__photo" alt="фото сотрудника" src="/img/teamphoto.png" />
+										</li>
+										
+										<li class="accordeon_text">
+											<h3>Оператор</h3> 
+											<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+										</li> 
+									</ul> 
+									
+								</li>
+								<li class="accordeon__item">
+									<a href="#" class="accordeon__trigger">
+										<p class="accordeon_name">Ричард Джеймс</p>
+									</a>
+									<!-- ниже у Сабанцева В. оформлено не списком, а дивом, при этом в блоке accordeon_text
+									выделены дивы title и content -->
+									<ul class="accordeon__descr">
+										<li><img class="accordeon__photo" alt="фото сотрудника" src="/img/teamphoto.png" />
+										</li>
+										
+										<li class="accordeon_text">
+											<h3>Оператор</h3> 
+											<p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p>
+										</li> 
+									</ul> 
+									
+								</li>
+								<!-- Ниже предыдущий вариант верстки -->
+								<!-- <div class="accordeon_item"> -->
+										<!-- <div> -->
+											<!-- <p class="accordeon_name">Ричард Джеймс</p> -->
+										<!-- </div> -->
+										<!-- <div class="accordeon_descr"> -->
+											<!-- <ul class="accordeon_descr-ul"> -->
+												<!-- <li><img class="teamphoto" alt="фото сотрудника" src="/img/teamphoto.png" /> -->
+												<!-- </li> -->
+												<!-- <li class="accordeon_descr-ul--li50px"> -->
+													<!-- <h3>Оператор</h3>  -->
+													<!-- <p>С радостью поможет подобрать идеальный бургер и оформить заказ.</p> -->
+												<!-- </li>  -->
+											<!-- </ul>  -->
+										<!-- </div>  -->
+									<!-- </div> -->
 								
 								
-							</div>
+							</ul>
 						</div>
 					</div>	
 					
 			</section>
+			<section class="screen menu_screen">
+				<div class="wrapper menu_wrapper">
+							<div class="main_title_div">
+								<h2 class="main_title">Меню</h2>
+							</div>
+							<ul class="vertical-accordeon">
+								<li class="vertical-accordeon__item">
+									<a class="vertical-accordeon__link">
+										<div style="background-image:url(img/menu/meat.png); background-size: cover;
+										background-position: center bottom;">Для мясоедов</div>
+									</a>
+									<div class="vertical-accordeon__textblock">
+										<p class="vertical-accordeon__text">
+										Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+										Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову. 
+										</p>
+									</div>
+								</li>
+								<li class="vertical-accordeon__item">
+									<a class="vertical-accordeon__link">
+										<div style="background-image:url(img/menu/vegan.png); background-size: cover;
+										background-position: center bottom;">Вегетарианское</div>
+									</a>
+									<div class="vertical-accordeon__textblock">
+										<p class="vertical-accordeon__text">
+										Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+										Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову. 
+										</p>
+									</div>
+								</li>
+								<li class="vertical-accordeon__item">
+									<a class="vertical-accordeon__link">
+										<div style="background-image:url(img/menu/diet.png); background-size: cover;
+										background-position: center bottom;">Диетическое</div>
+									</a>
+									<div class="vertical-accordeon__textblock">
+										<p class="vertical-accordeon__text">
+										Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+										Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову. 
+										</p>
+									</div>
+								</li>								
+																						
+							</ul>							
+				</div>
+			</section>
+			
 			<section class="screen review_screen">
 				<ul class="review__list">
 					<li class="review_item review_item1">
@@ -217,6 +310,84 @@
 						<div class="review_details_button"></div>
 					</li>
 				</ul>
+			</section>
+			<section class="screen order_screen">
+				<div class="wrapper order_wrapper">
+				    <div class="main_title_div">
+						<h2 class="main_title">Закажите доставку</h2>
+				    </div>
+					<div class="form">
+							<form action="" class="form__content">
+									<div class="form-content__column">
+											
+												<div class="form__row">
+														<label class="form__block">
+														<div class="form__block-title">Имя</div>
+														<input type="text" class="form__input">
+														</label>
+														<label class="form__block">
+														<div class="form__block-title">Телефон</div>
+														<input type="text" class="form__input">
+														</label>
+												</div>
+												<div class="form__row">
+														<label class="form__block">
+														<div class="form__block-title">Улица</div>
+														<input type="text" class="form__input">
+														</label>
+												</div>
+												<div class="form__row">
+														<label class="form__block">
+														<div class="form__block-title">Дом</div>
+														<input type="text" class="form__input">
+														</label>
+														<label class="form__block">
+														<div class="form__block-title">Корпус</div>
+														<input type="text" class="form__input">
+														</label>
+														<label class="form__block">
+														<div class="form__block-title">Квартира</div>
+														<input type="text" class="form__input">
+														</label>
+														<label class="form__block">
+														<div class="form__block-title">Этаж</div>
+														<input type="text" class="form__input">
+														</label>
+												</div>
+									</div>							
+									<div class="form-content__column">
+											<div class="form__row">
+													<!-- Комментарий -->
+													<label class="form__block">
+													<div class="form__block-title">Комментарий</div>
+													<textarea class="form__input"> </textarea> 
+													</label>
+												
+											</div>
+											<div class="form__row">
+													<!-- Комментарий -->
+													<label class="form__block">
+													<input type="radio" name="pay" value="ie"> Потребуется сдача
+													<input type="radio" name="pay" value="opera" checked>Оплата по карте
+													</label>
+												
+											</div>
+											<div class="form__row">
+													<!-- Комментарий -->
+													<label class="form__block">
+													<input type="checkbox" checked>Не перезванивать
+													</label>
+											
+											</div>									
+									</div>								
+							</form>
+					</div>
+				</div>
+			</section>
+			<section class="screen contacts_screen">
+					<div class="wrapper contacts_wrapper">
+					</div>
+
 			</section>
 		</div>
 	</div>	

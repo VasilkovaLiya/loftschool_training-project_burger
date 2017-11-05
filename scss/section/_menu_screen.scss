@@ -1,0 +1,53 @@
+.menu_screen {
+	background-color: rgba(236, 234, 234, 0.31);
+	background-image: url(../img/menu/menu-bg.png);
+	background-size: cover;
+    height: 100vh;
+    position: relative;   
+}
+
+.menu_wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.vertical-accordeon {
+    position: absolute;
+    width:50%;
+    top:0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.vertical-accordeon__item {
+    width:auto;
+    height: 100%;    
+}
+
+.vertical-accordeon__link {
+    font-family: 'gagalinregular';
+	font-size: rem(40px);
+    color:white;
+    margin: auto;
+    line-height: rem(110px);
+}
+
+.vertical-accordeon__link div {
+    transform: rotate(180deg);
+    writing-mode: tb-rl; 
+    height: 100%;
+    text-align: center;
+    //background-image: url(../img/menu/meat.png);
+    //background-size: cover;
+    //background-position: center bottom;
+    width:rem(110px);
+}
+
+.vertical-accordeon__textblock {
+    width: 0; 
+    overflow: hidden;
+}

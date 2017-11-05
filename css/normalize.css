@@ -446,7 +446,7 @@ template {
   display: none;
 }
 
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 a {

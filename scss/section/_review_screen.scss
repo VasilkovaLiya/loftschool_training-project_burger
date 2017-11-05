@@ -17,11 +17,16 @@
 
 .review_item {
 /* 	flex-grow: 1; */
-/* 	min-height:327px;
-	flex-basis:276px; */
+/* 	min-height:rem(327px);
+	flex-basis:rem(276px); */
   width: 25%;
   height: 50%;
-  overflow:hidden;
+	overflow:hidden;
+	
+	@include tablet {
+		width: 50%;
+		height: 25%;
+	}
   
 }
 .review_item1 {

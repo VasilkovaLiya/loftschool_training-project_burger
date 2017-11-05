@@ -1,0 +1,14 @@
+.contacts_screen {
+	background-color: rgba(236, 234, 234, 0.31);
+	background-image: url(../img/contacts/map-markers-bg.png);
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    position: relative;   
+}
+
+.contacts_wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}

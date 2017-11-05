@@ -1,16 +1,26 @@
 .team_screen {
 	background-color: rgba(0,0,0,0.31);
-	background-image: url(../img/team-bg.png);
-	background-size: cover;
-	height: 100vh;
+	background-image: url(../img/team-bg.png) ;
+    background-size: cover;
+        height: 100vh;
+    position: relative;
+    @include tablet {
+    background-position: center center;
+    }
 }
 
 .team_wrapper {
+    position: absolute;
 	width: 50%;
-	margin-left:auto;
+	left:50%;
 	height: 100%;
 	background-image: url(../img/team-rect.png);
-	background-size: cover;
+    background-size: cover;
+    
+    @include tablet {
+        left:0%;
+        width: 100%;
+	}
 }
 
 // .team_screen {
@@ -22,8 +32,8 @@
 
 // .team_wrapper {
 // 	position: absolute;
-// 	right: 0px;
-// 	top:0px;
+// 	right: rem(0px);
+// 	top:rem(0px);
 //     height: 100%;
 //     width:50%;
 //     display: flex;
@@ -41,13 +51,19 @@
     
 }
 
+.accordeon {
+    @include tablet {
+        text-align: center;
+    }
+}
+
 .accordeon_item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.accordeom_descr {
+.accordeon_descr {
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -56,9 +72,9 @@
 .accordeon_name {
 color: #f9b43b;
 font-family: Gagalin;
-font-size: 14px;
+font-size: rem(14px);
 font-weight: 400;
-line-height: 28.11px;
+line-height: rem(28.11px);
 }
 
 .accordeon_descr {
@@ -73,7 +89,7 @@ line-height: 28.11px;
 }
 
 .accordeon_descr-ul li {
-    padding:5px;
+    padding:rem(5px);
     
 }
 
