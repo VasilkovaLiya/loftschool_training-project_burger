@@ -14,7 +14,7 @@
 
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/main.css">
-
+<link rel="shortcut icon" href="img/favicon_burger.ico" type="image/x-icon">
  <!--скрипт для старых браузеров IE-->
 
  <!--[if lt IE 9]>
@@ -356,27 +356,33 @@
 												</div>
 									</div>							
 									<div class="form-content__column">
-											<div class="form__row">
+											<div class="form__row row1 column2">
 													<!-- Комментарий -->
 													<label class="form__block">
 													<div class="form__block-title">Комментарий</div>
-													<textarea class="form__input"> </textarea> 
+													<textarea class="form__input textarea"> </textarea> 
 													</label>
 												
 											</div>
-											<div class="form__row">
+											<div class="form__row row2 column2">
 													<!-- Комментарий -->
-													<label class="form__block">
-													<input type="radio" name="pay" value="ie"> Потребуется сдача
-													<input type="radio" name="pay" value="opera" checked>Оплата по карте
-													</label>
+													<div class="form__block">
+													<!-- <input type="radio" name="cash" class="cash" value="Наличные и сдача"> Потребуется сдача
+													<input type="radio" name="paycard" class="paycard" value="Оплата по карте" checked>Оплата по карте
+													 -->
+													<input type="radio" class="radio" id="radio" value="Наличные и сдача" />
+													<label for="radio">Потребуется сдача</label>
+													<input type="radio" class="radio paycard" id="radio" value="Оплата по карте" />
+													<label for="radio">Оплата по карте</label>
+													</div>
 												
 											</div>
-											<div class="form__row">
+											<div class="form__row row3  column2">
 													<!-- Комментарий -->
-													<label class="form__block">
-													<input type="checkbox" checked>Не перезванивать
-													</label>
+													<div class="form__block">
+													<input type="checkbox" class="checkbox" id="checkbox" checked/>
+													<label for="checkbox">Не перезванивать</label>
+													</div>
 											
 											</div>									
 									</div>								
@@ -389,6 +395,23 @@
 					</div>
 
 			</section>
+			<foter class="footer">
+				<div class="footer__wrapper">
+					<div class="footer__contacts">
+						<p class="footer__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</p>
+						<p class="footer__tel">+7 (812) 377-13-77</p>
+					</div>
+					<div class="socials">
+						<ul class="socials__icons">
+							<li class="socials__item">vk</li>
+							<li class="socials__item">insta</li>
+							<li class="socials__item">tgm</li>
+							<li class="socials__item">ok</li>
+						</ul>
+					</div>
+				</div>
+			</foter>	
+
 		</div>
 	</div>	
 </body>

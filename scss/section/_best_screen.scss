@@ -2,7 +2,6 @@
     background-color: rgba(0,0,0,0.31);
     background-image: url(../img/bg_best.png);
     background-size: cover;
-    height: 100vh;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -43,10 +42,7 @@
 }
 
 .descr_text {
-    font-family: Ubuntu;
-    font-size: rem(14px);
-    font-weight: 300;
-    line-height: rem(24px);
+      @include text;
 }
 
 .main_title_div {

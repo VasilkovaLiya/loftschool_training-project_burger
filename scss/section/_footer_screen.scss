@@ -1,0 +1,33 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #101010;
+    min-height: rem(55px);
+    
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials__icons {
+    display: flex;
+
+}
+
+.footer__tel {
+    color: #e45028;
+    font-family: 'ubuntu';
+    font-weight: bold;
+}
+.footer__adress {
+    color:#fff;
+    font-family: 'ubuntu';
+    font-weight: light;
+}
+
+.socials__icons {
+    color:#fff;
+}
