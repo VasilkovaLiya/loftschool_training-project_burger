@@ -15,12 +15,13 @@
 	height: 100%;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-start;
+	justify-content: space-around;
 }
 
 .profit_content {
     display: flex;
     //flex-wrap:wrap;
+    margin-bottom: 150px;
     
 }
 
@@ -45,9 +46,9 @@
       @include text;
 }
 
-.main_title_div {
-    margin: rem(80px);
-}
+// .main_title_div {
+//     margin: rem(80px);
+// }
 
 .profit_img {
     height: rem(90px);

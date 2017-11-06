@@ -3,13 +3,22 @@
 	background-image: url(../img/menu/menu-bg.png);
 	background-size: cover;
     position: relative;   
+    display: flex;
+    justify-content: space-around;
 }
 
 .menu_wrapper {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
+    right: 0;
+}
+
+.menu__title {
+    position: absolute;
+    left: 10%;
+    top:10%;
 }
 
 .vertical-accordeon {

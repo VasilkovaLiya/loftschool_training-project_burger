@@ -20,12 +20,42 @@
   height: 50%;
 	overflow:hidden;
 	
+
+	
+	
 	@include tablet {
 		width: 50%;
 		height: 25%;
 	}
   
 }
+
+.review_descr {
+	margin: 50px 30px 0px 20px;
+}
+
+
+// .review_descr {
+// width:0px;
+// overflow: hidden;
+// }
+
+// .review_descr {
+// &:hover {
+// width:100%;
+// }
+// }
+
+.review_descr {
+	visibility: hidden;
+	}
+.review_descr--active {
+	visibility: visible;
+}
+
+
+
+
 .review_item1 {
 	background: url(../img/review_img_1_2.png) ;
 	background-size: cover;
@@ -69,3 +99,16 @@ background-clip: padding-box;
 background-clip: padding-box;	
 }
 
+
+.review_name {
+	font-family: 'gagalinregular';
+	font-size: rem(14px);
+	color: #fff;
+	margin-bottom: 20px;
+}
+.review_text {
+	@include text;
+	color: #fff;
+	margin-bottom: 20px;
+	overflow: hidden;
+}

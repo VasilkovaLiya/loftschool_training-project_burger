@@ -3,31 +3,46 @@
     bottom: 0;
     width: 100%;
     background-color: #101010;
-    min-height: rem(55px);
+    height: rem(55px);
     
 }
 
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
+    height: rem(55px);
 }
 
-.socials__icons {
+.socials {
     display: flex;
+    margin: 15px 60px 0px 0px;
 
 }
 
 .footer__tel {
     color: #e45028;
     font-family: 'ubuntu';
-    font-weight: bold;
+    font-weight: 800;
+    margin: 0px 0px 0px 80px;
 }
 .footer__adress {
     color:#fff;
-    font-family: 'ubuntu';
-    font-weight: light;
+    @include text;
+    margin: 10px 0px 0px 80px;
 }
 
-.socials__icons {
-    color:#fff;
-}
+.icons {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    fill: #5b5b5b;
+    width: 23px;
+    height: 23px;
+    &:hover {
+      fill: #e45028;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  

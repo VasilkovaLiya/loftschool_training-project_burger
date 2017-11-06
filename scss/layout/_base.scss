@@ -84,17 +84,40 @@ body {
   
 } 
 
+.order--colorless {
+  width: rem(100px);
+  height: rem(38px);
+  display: flex;
+  
+} 
+
+.order--grey {
+  border-radius:rem(5px);
+	align-items:baseline;
+  width: rem(100px);
+  height: rem(38px);
+  background-color: #2f3234;   
+  display: flex;
+} 
+
 .order-link {
-  margin: auto;
+  margin:auto;
+  color:#fff;
   @extend .menu-fonts;
 }
+
+
 
 .main_title {
 	font-family: 'gagalinregular';
 	font-size:4rem;
-	color: #f9b43b;
-	
+  color: #f9b43b;
+ 
+  
 }
+
+
+
 
 @mixin text{
   font-family: Ubuntu;
@@ -107,3 +130,19 @@ body {
   height: 100vh;
   min-height: 650px;
 }
+
+@mixin visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.div--hiddenWrapper {
+  @include visuallyHidden
+}
+
