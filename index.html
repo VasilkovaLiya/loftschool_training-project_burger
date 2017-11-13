@@ -31,14 +31,52 @@
 			<section class="screen first_screen">
 				<div class="wrapper first_wrapper">	
 					<header class="header">	
+							<div class="hamb-menu" id="hamb-menu__id" >
+									<div class="hamb-menu__container">
+										<div class="logo_container">						
+											<a href="" class="logo">
+											<img src="img/logo.svg" alt="Mr.Burger" class="logo_img" />
+											</a>
+										</div>
+										<div class="closeIcon" id='closeIcon'>
+											<a href="#" class="closeIcon__link"><img src="img/hamb-menu/close.png"></a>
+										</div>
+									</div>
+								
+									<nav class="hamb-menu__navigation">
+										<ul class="hamb-menu__list">
+											<li class="hamb-menu__item">
+												<a href="#" class="hamb-menu__link">Почему мы</a>
+											</li>
+											<li class="hamb-menu__item">
+												<a href="#" class="hamb-menu__link">Меню</a>
+											</li>
+											<li class="hamb-menu__item">
+												<a href="#" class="hamb-menu__link">Советы</a>
+											</li>	
+											<li class="hamb-menu__item">
+												<a href="#" class="hamb-menu__link">Кто мы</a>
+											</li>	
+											<li class="hamb-menu__item">
+												<a href="#" class="hamb-menu__link">Свяжитесь с нами</a>
+											</li>	
+											<li class="hamb-menu__item">
+												<a href="#" class="hamb-menu__link">Контакты</a>
+											</li>	
+											
+										</ul>
+									</nav>
+							</div>
+
 							<div class="logo_container">						
 								<a href="" class="logo">
 								<img src="img/logo.svg" alt="Mr.Burger" class="logo_img" />
 								</a>
 							</div>
+
 							<div class="nav">	
-								<menu class="menu menu-fonts">
-									<ul class="menu_list">
+								<nav class="menu menu-fonts">
+									<ul class="menu__list">
 											<li class="menu__item">
 												<a href="#" class="menu__link">
 													О нас
@@ -71,11 +109,51 @@
 											</li>
 									</ul>
 									
-								</menu>	
+								</nav>	
+							
+									<!-- <menu class="menu menu-fonts">
+										<ul class="menu_list">
+												<li class="menu__item">
+													<a href="#" class="menu__link">
+														О нас
+													</a>
+												</li>
+												<li class="menu__item">
+													<a href="#" class="menu__link">
+													Бургеры
+													</a>
+												</li>
+												<li class="menu__item">
+													<a href="#" class="menu__link">
+													Команда
+													</a>
+												</li>
+												<li class="menu__item">
+													<a href="#" class="menu__link">
+													Меню
+													</a>
+												</li>
+												<li class="menu__item">
+													<a href="#" class="menu__link">
+													Отзывы
+													</a>
+												</li>
+												<li class="menu__item">
+													<a href="#" class="menu__link">
+													Контакты
+													</a>
+												</li>
+										</ul>
+										
+									</menu>	 -->
+
+
+
+
 								<div class="order"><a class="order-link" href="#">Заказать</a></div>
 								<div class="menu-hamburger-link">
 									<a href="#">	
-										<div class="hamb-icon"></div>																		
+										<div class="hamb-icon" id='hamb-icon__id'></div>																		
 									</a>							
 								
 								</div>
@@ -84,25 +162,12 @@
 						
 					</header>
 					
-					<!-- <div class="scroll_panel"> -->
-						<!-- <ul class='dots'> -->
-								<!-- <li><img src="" alt="dots" /></li> -->
-								<!-- <li><img src="" alt="dots" /></li> -->
-								<!-- <li><img src="" alt="dots" /></li> -->
-								<!-- <li><img src="" alt="dots" /></li> -->
-								<!-- <li><img src="" alt="dots" /></li> -->
-								<!-- <li><img src="" alt="dots" /></li> -->
-								<!-- <li><img src="" alt="dots" /></li> -->
-								<!-- <li><img src="" alt="dots" /></li>			 -->
-						<!-- </ul>	 -->
-					<!-- </div> -->
-
 					<div class="we-do">
 						<div class="we-do__img">
 							<img src="img/first/burger.png" alt="Наш бургер" class="burger-slider_burger_img">
 						</div>
 						<div class="we-do__descr">
-							<div class="main_title">Мы делаем</div>
+							<div class="main_title main-title--modif">Мы делаем</div>
 							<div class="we-do_second-slogan">натуральные бургеры</div>
 						</div>
 					</div>
@@ -116,30 +181,95 @@
 			<section class="screen best_screen"	>
 				<div class="wrapper best_wrapper">
 					<div class="main_title_div">
-						<h2 class="main_title">Мы лучшие</h2>
+						<h2 class="main_title--black">Мы лучшие</h2>
 					</div>
 					
 					<div class="profit_content">
 						<div class="profit_content__profit_item">
-							<div class="profit_img"><img src="/img/meat.png"/></div>
-							<h2 class="profit_title">100% свежее мясо</h2>
-							<div class="descr_text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+							
+								<div class="profit_img"><img src="img/best/meat.png"/></div>
+							
+								<ul class="profit__descr">
+								<li class="profit_title">100% свежее мясо</li>
+								<li class="descr_text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</li>
+							</ul>							
 						</div>										
 						<div class="profit_content__profit_item">
-							<div class="profit_img"><img src="/img/hand.png"/></div>
+							
+								<div class="profit_img"><img src="img/best/hand.png"/></div>
+							
+								<ul class="profit__descr">
+								<li class="profit_title">Ручная  сборка</li>
+								<li class="descr_text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</li>
+							</ul>							
+						</div>										
+						<div class="profit_content__profit_item">
+							
+								<div class="profit_img"><img src="img/best/natural.png"/></div>
+							
+								<ul class="profit__descr">
+								<li class="profit_title">Натуральные  ингредиенты</li>
+								<li class="descr_text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</li>
+							</ul>							
+						</div>										
+						<!-- <div class="profit_content__profit_item">
+							<div class="profit_img"><img src="img/best/hand.png"/></div>
 							<h2 class="profit_title">Ручная  сборка</h2>
 							<div class="descr_text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
 						</div>												
 						<div class="profit_content__profit_item">
-							<div class="profit_img"><img src="/img/natural.png"/></div>
+							<div class="profit_img"><img src="img/best/natural.png"/></div>
 							<h2 class="profit_title">Натуральные  ингредиенты</h2>
 							<div class="descr_text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
-						</div>
+						</div> -->
 						
 					</div>
 				</div>	
 				
 			</section>
+			<section class="screen burger__screen">
+				<div class="wrapper burger__wrapper">
+					<a href="#" class="screen_scroll-down--left">
+							<img src="img/arrow-scroll.svg" alt="Влево">
+					</a>
+						
+					<div class="burger__slider">
+							<div class="burger__ingridients">
+								<svg class="burger__btn-ingr"><use xlink:href="icons/sprite.svg#burger"/></svg>
+								<div class="btn__desc">Состав</div>
+							</div>
+							<div class="burger__calories">
+								<svg class="burger__btn-cal"><use xlink:href="icons/sprite.svg#kkal"/></svg>
+							<div class="burger__calories-num">1200 <span>Ккал</span></div>
+							</div>
+						<div class="burger__pic">
+								<img class="burger__pic-img" src="img/burger/burger.png" alt="">	
+						</div>
+						<div class="burger__content">
+							<div class="burger__content-title main_title_div">
+									<h2 class="main_title--white">Dark Beef Burger</h2>
+							</div>
+							<div class="burger__content-text">
+									Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+							</div>
+							<div class="burger__content-order">
+								<div class="burger__content-price">
+									500<span class="burger__content-price--currency" > рублей</span>
+								</div>
+								<div class="order"><a class="order-link" href="#">Заказать</a></div>
+							</div>
+						</div>
+					</div>	
+
+					
+					<a href="#" class="screen_scroll-down--right">
+							<img src="img/arrow-scroll.svg" alt="Вправо">
+					</a>
+				</div>
+				
+			</section>		
+
+
 			<section class="screen team_screen"	>
 					<div class="wrapper team_wrapper">
 						<!--<div class="accordeon_wrapper">-->
@@ -151,8 +281,8 @@
 									  <a href="#" class="team-acco__trigger">Дэниел Редклифф</a>
 									  <div class="team-acco__content">
 										<div class="team-acco__pic">
-										  <img class="team-acco__pic-img" src="img/team-photo.png" alt="">
-										</div>
+											<img class="team-acco__pic-img" src="img/team-photo.png" alt="">
+										  </div>
 										<div class="team-acco__text">
 										  <div class="team-acco__text-title">Оператор</div>
 										  <div class="team-acco__text-content">
@@ -166,9 +296,16 @@
 									<li class="team-acco__item team-acco__item_active">
 									  <a href="#" class="team-acco__trigger">Ричард Джеймс</a>
 									  <div class="team-acco__content">
-										<div class="team-acco__pic">
-										  <img class="team-acco__pic-img" src="img/team-photo.png" alt="">
-										</div>
+										<!-- <div class="team-acco__pic" style="background: url(img/review_img_1_2.png) ;
+										background-size: cover;
+										background-clip: padding-box;
+										background-position: center center;
+										background-origin: content-box;	">
+											<img class="team-acco__pic-img" src="img/team-photo.png" alt="">
+										   </div> -->
+										   <div class="team-acco__pic">
+											<img class="team-acco__pic-img" src="img/team-photo.png" alt="">
+										  </div>
 										<div class="team-acco__text">
 										  <div class="team-acco__text-title">Оператор</div>
 										  <div class="team-acco__text-content">
@@ -223,10 +360,9 @@
 				<div class="wrapper menu_wrapper">
 							
 							<ul class="vertical-accordeon">
-								<li class="vertical-accordeon__item">
-									<a class="vertical-accordeon__link">
-										<div style="background-image:url(img/menu/meat.png); background-size: cover;
-										background-position: center bottom;">Для мясоедов</div>
+								<li class="vertical-accordeon__item vertical-accordeon__item_active">
+									<a class="vertical-accordeon__link" style="background-image:url(img/menu/meat.png);">
+										<div>Для мясоедов</div>
 									</a>
 									<div class="vertical-accordeon__textblock">
 										<p class="vertical-accordeon__text">
@@ -236,9 +372,8 @@
 									</div>
 								</li>
 								<li class="vertical-accordeon__item">
-									<a class="vertical-accordeon__link">
-										<div style="background-image:url(img/menu/vegan.png); background-size: cover;
-										background-position: center bottom;">Вегетарианское</div>
+									<a class="vertical-accordeon__link" style="background-image:url(img/menu/vegan.png);">
+										<div>Вегетарианское</div>
 									</a>
 									<div class="vertical-accordeon__textblock">
 										<p class="vertical-accordeon__text">
@@ -248,9 +383,8 @@
 									</div>
 								</li>
 								<li class="vertical-accordeon__item">
-									<a class="vertical-accordeon__link">
-										<div style="background-image:url(img/menu/diet.png); background-size: cover;
-										background-position: center bottom;">Диетическое</div>
+									<a class="vertical-accordeon__link" style="background-image:url(img/menu/diet.png);">
+										<div>Диетическое</div>
 									</a>
 									<div class="vertical-accordeon__textblock">
 										<p class="vertical-accordeon__text">
@@ -258,7 +392,8 @@
 										Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову. 
 										</p>
 									</div>
-								</li>								
+								</li>
+															
 																						
 							</ul>							
 				</div>
@@ -269,8 +404,11 @@
 						<h2 class="main_title">Отзывы</h2>
 				</div>
 				<ul class="review__list">
-					<li class="review_item review_item1 ">
-							<div class="review_descr review_descr--active ">
+					<li class="review_item review_item1" style="background: url(img/review_img_1.jpg) no-repeat; background-size: cover;
+					background-clip: padding-box;
+					background-position: center center;
+					background-origin: content-box;">
+							<div class="review_descr review_descr">
 								<div class="review_name">Константин Спилберг</div>
 								<div class="review_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 								<div class="order--grey"><a class="order-link" href="#">Подробнее</a></div>
@@ -381,32 +519,40 @@
 												
 											</div>
 											<div class="form__row row2 column2">
-													<!-- Комментарий -->
-													<div class="form__block">
-													<!-- <input type="radio" name="cash" class="cash" value="Наличные и сдача"> Потребуется сдача
-													<input type="radio" name="paycard" class="paycard" value="Оплата по карте" checked>Оплата по карте
-													 -->
-													<input type="radio" class="radio" id="radio" value="Наличные и сдача" />
-													<label for="radio">Потребуется сдача</label>
-													<input type="radio" class="radio paycard" id="radio" value="Оплата по карте" />
-													<label for="radio">Оплата по карте</label>
+													<div class="form__block form__block--column">													
+														<label class='radio__label'>
+															<input type="radio" name="payment" class="radio__input" value="Потребуется сдача">
+															<span class="radio__custom"></span>
+															<span class="radio__text">Потребуется сдача</span>
+														</label>
+														<label class='radio__label'>
+															<input type="radio" name="payment" class="radio__input" value="Оплата по карте">
+															<span class="radio__custom"></span>
+															<span class="radio__text">Оплата по карте</span>
+														</label>
+														
 													</div>
-												
+
 											</div>
-											<div class="form__row row3  column2">
-													<!-- Комментарий -->
+											<div class="form__row row3  column2">													
 													<div class="form__block">
-													<input type="checkbox" class="checkbox" id="checkbox" checked/>
-													<label for="checkbox">Не перезванивать</label>
+														<label>
+															<input class="checkbox" type="checkbox" name="checkbox">
+															<span class="checkbox__custom"></span>
+															<span class="checkbox__text">Не перезванивать</span>
+														</label>
 													</div>
+
+													
 											
 											</div>
 											<div class="form__row row4 column2">
 													<div class="order"><a class="order-link" href="#">Заказать</a></div>									
 													<div class="order--colorless"><a class="order-link" href="#">Очистить</a></div>	
 											</div>
+									</div>				
 																			
-									</div>								
+																	
 							</form>
 					</div>
 				</div>
@@ -444,5 +590,6 @@
 
 		</div>
 	</div>	
+<script type="text/javascript" src="js/script.js"></script>	
 </body>
 </html>

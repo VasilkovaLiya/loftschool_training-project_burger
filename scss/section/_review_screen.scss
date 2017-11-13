@@ -1,5 +1,5 @@
 .review__list{
-  height:100vh;
+  height:100%;
   display: flex;
   flex-wrap: wrap;
   
@@ -19,8 +19,10 @@
   width: 25%;
   height: 50%;
 	overflow:hidden;
+	//background: rgba($color: #313030, $alpha: 0.8);
+	filter: grayscale(1);
 	
-
+	
 	
 	
 	@include tablet {
@@ -31,33 +33,28 @@
 }
 
 .review_descr {
-	margin: 50px 30px 0px 20px;
-}
-
-
-// .review_descr {
-// width:0px;
-// overflow: hidden;
-// }
-
-// .review_descr {
-// &:hover {
-// width:100%;
-// }
-// }
-
-.review_descr {
-	visibility: hidden;
+	
+	opacity: 0;
+	height: 100%;
+	padding: 50px 30px 30px 20px;
+	@include tablet {
+		padding: 30px 20px 10px 20px;
+		text-align: center;
 	}
-.review_descr--active {
-	visibility: visible;
+	
+	.review_item &:hover {
+		opacity: 1;
+		
+	  }
+
 }
 
 
 
 
 .review_item1 {
-	background: url(../img/review_img_1_2.png) ;
+	
+	
 	background-size: cover;
 	background-clip: padding-box;
 	background-position: center center;
@@ -105,10 +102,20 @@ background-clip: padding-box;
 	font-size: rem(14px);
 	color: #fff;
 	margin-bottom: 20px;
+
+	@include phone {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
 }
 .review_text {
 	@include text;
 	color: #fff;
 	margin-bottom: 20px;
 	overflow: hidden;
+
+	@include phone {
+		display:none;
+	}
 }

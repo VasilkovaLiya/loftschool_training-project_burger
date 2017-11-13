@@ -22,7 +22,10 @@
     text-align: left;
     @include tablet {
 		flex-direction: column;
-	}
+    }
+    @include phone {
+        margin-bottom: 0px;
+    }
 }
 
 .form-content__column {
@@ -32,21 +35,26 @@
     flex: 1;
     padding: 15px;
     margin: 0 auto;
+
+    @include tablet {
+        width:460px;
+    }
+
+    @include phone {
+        width: 100%;
+    }
 }
 
 .form__row {
-    display: flex;
-    
-    
-
+    display: flex; 
 }
 
-.column2 {
-    flex:1;
-}
-.column2:first-child {
-    flex:2;
-}
+// .column2 {
+//     flex:1;
+// }
+// .column2:first-child {
+//     flex:2;
+// }
 
 
 .form__block {
@@ -60,13 +68,34 @@
 
     @include text;
     color: #fff;
+
+    @include phone {
+        font-size: 14px;
+    }
   }
+
+.form__block--column{
+
+    @include phone--small {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .form__input {
     width:100%;
     height: rem(35px);
     border-radius: 4px;
     border: 0;
+
+    @include phone {
+        height: rem(35px);
+    }
+
+    @include phone--small {
+        height: rem(25px);
+    }
+
     
 }
 .textarea {
@@ -76,153 +105,114 @@
     width: 100%; 
     box-sizing: border-box;
     flex:3;
+
+    @include phone {
+        height: rem(60px);
+      }
 }
 
-.row2 {
-    margin-top: 40px;
-}
-.paycard {
-    margin-left: 20px;
-    margin-right: 10px;
-}
 
-.radio, .checkbox {
-    margin-right: 10px;
-}
-
-// input[type=radio]:checked {
-//     content: "\2022";
-//     color: #ee2e2e;
-//     font-size: 30px;
-//     text-align: center;
-//     line-height: 18px;
-// }
-
-.radio {
-    vertical-align: top;
-    width: 17px;
-    height: 17px;
-    margin: 0 3px 0 0;
-  }
-  .radio + label {
-    cursor: pointer;
-  }
-  .radio:not(checked) {
-    position: absolute;
-    opacity: 0;
-  }
-  .radio:not(checked) + label {
-    position: relative;
-    padding: 0 0 0 35px;
-  }
-  .radio:not(checked) + label:before {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: 0;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #CDD1DA;
-    border-radius: 50%;
-    background: #FFF;
-  }
-  .radio:not(checked) + label:after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 4.5px;
-    width: 7.5px;
-    height: 7.5px;
-    border-radius: 50%;
-    background: #e35028;
-  }
-  
-//   /* Cначала обозначаем стили для IE8 и более старых версий
-// т.е. здесь мы немного облагораживаем стандартный чекбокс. */
-// .checkbox {
-//     vertical-align: top;
-//     margin: 0 3px 0 0;
-//     width: 15px;
-//     height: 15px;
-//   }
-//   /* Это для всех браузеров, кроме совсем старых, которые не поддерживают
-//   селекторы с плюсом. Показываем, что label кликабелен. */
-//   .checkbox + label {
+//   #cash {display: none;}
+//   [for="cash"] {
+//     position: relative;
+//     display: block;
+//     width: 14px;
+//     height: 14px;
+//     border-radius: 100%;
 //     cursor: pointer;
 //   }
   
-//   /* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
-//   Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
-//   в них все нижеследующие стили не сработают. */
+//   /* точка внутри */
+//   [for="cash"]:after {
+//     content: "";
+//     position: absolute;
+//     left: 40%; top: 40%;
+//     width: 20%;
+//     height: 20%;
+//     border-radius: 100%;
+//     background: #fff;        
+//   }
   
-//   /* Прячем оригинальный чекбокс. */
-//   .checkbox:not(checked) {
+//   /* кружок */
+//   [for="cash"]:before {
+//     content: "";
 //     position: absolute;
-//     opacity: 0;
+//     top: 8%; right: 8%; bottom: 8%; left: 8%;
+//     border-radius: 100%;
+//     background: #fff;  
 //   }
-//   .checkbox:not(checked) + label {
-//     position: relative; /* будем позиционировать псевдочекбокс относительно label */
-//     padding: 0 0 0 60px; /* оставляем слева от label место под псевдочекбокс */
+//   #cash:checked ~ [for="cash"]:before {
+//     background: #fff;
 //   }
-//   /* Оформление первой части чекбокса в выключенном состоянии (фон). */
-//   .checkbox:not(checked) + label:before {
-//     content: '';
-//     position: absolute;
-//     top: -4px;
-//     left: 0;
-//     width: 50px;
-//     height: 26px;
-//     border-radius: 13px;
-//     background: #CDD1DA;
-//     box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+//   #cash:checked ~ [for="cash"]:after {
+//     background: #e45028;  
 //   }
-//   /* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
-//   .checkbox:not(checked) + label:after {
-//     content: '';
-//     position: absolute;
-//     top: -2px;
-//     left: 2px;
-//     width: 22px;
-//     height: 22px;
-//     border-radius: 10px;
-//     background: #FFF;
-//     box-shadow: 0 2px 5px rgba(0,0,0,.3);
-//     transition: all .2s; /* анимация, чтобы чекбокс переключался плавно */
-//   }
-//   /* Меняем фон чекбокса, когда он включен. */
-//   .checkbox:checked + label:before {
-//     background: #9FD468;
-//   }
-//   /* Сдвигаем переключатель чекбокса, когда он включен. */
-//   .checkbox:checked + label:after {
-//     left: 26px;
-//   }
-//   /* Показываем получение фокуса. */
-//   .checkbox:focus + label:before {
-//     box-shadow: 0 0 0 3px rgba(255,255,0,.5);
-//   }
+  
 
-  .checkbox {
-	position:relative;
-	padding-left:25px;
+.checkbox,
+.radio__input {
+    display: none;
 }
-.checkbox input[type=checkbox] {
-	display:none;
+.checkbox__custom,
+.radio__custom {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    //border: 2px solid rgb(100, 23, 23);
+    //border-radius: 3px;
+    position: relative;
 }
-.checkbox label:after {
-	content:'';
-	display:block;
-	height:20px;
-	width:20px;
-	outline:1px solid #939598;
-	position:absolute;
-	top:0;
-	left:0;
+.checkbox__custom,
+.radio__custom,
+.radio__text {
+    display: inline-block;
+    vertical-align: middle;   
 }
-.checkbox input[type=checkbox]:checked + label:after {
-	outline:1px solid #939598;
-	border:2px solid #fff;
-	width:10px;
-	height:10px;
-	background-color:#63849F;
+.radio__input:checked + .radio__custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    background: #e45028;
+    border-radius: 4px;
+}
+
+.checkbox:checked + .checkbox__custom::before {
+    //content: "\2714";
+    content: url(../img/form/arrow.png);
+    display: block;
+    position: absolute;
+    top: -4px;    
+    left: 2px;
+   @include phone {
+    top: 0;    
+    left: 18%;
+   }
+}
+
+.radio__custom,
+.radio__input:checked + .radio__custom::before {
+    border-radius: 50%;
+    //margin-right: 10px;
+}
+
+.radio__label {
+margin-right: 15px;
+}
+
+.radio__text, .checkbox__text {   
+    margin-left: 10px;
+}
+
+.row2, .row3, .row4 {
+    @include phone {
+        align-self: center;
+        margin-top: rem(40px);
+    }
+    @include phone--small {
+        margin-top: rem(20px);
+    }
 }

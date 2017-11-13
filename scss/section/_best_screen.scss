@@ -1,6 +1,6 @@
 .best_screen {
     background-color: rgba(0,0,0,0.31);
-    background-image: url(../img/bg_best.png);
+    background-image: url(../img/bg_best.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -15,13 +15,23 @@
 	height: 100%;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+    justify-content: center;
+    
+    @include phone {
+        width: 90%;  
+    }
 }
 
 .profit_content {
     display: flex;
     //flex-wrap:wrap;
     margin-bottom: 150px;
+   margin-top: 90px;
+    @include phone {
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 0;
+    }
     
 }
 
@@ -29,28 +39,54 @@
     width: 30%;
     margin: rem(0px) rem(20px);
     text-align: center;
+    @include phone {
+    display: flex;
+    width: 98%;
+    margin:15px 0;
+    }
+}
+
+
+
+.profit__descr {
+    @include phone {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 40px;
+        line-height: 24px;
+    }
 }
 
 .profit_title {
     color: #2f3234;
-    font-family: Lifehack;
+    font-family: lifehackmedium;
     font-size: rem(24px);
     font-weight: 500;
     line-height: rem(28px);
     letter-spacing: rem(-0.6px);
     margin-top: rem(35px);
     margin-bottom: rem(25px);
+    @include phone {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
 }
 
 .descr_text {
       @include text;
+      @include phone {
+          overflow: scroll;
+      }
 }
 
 // .main_title_div {
 //     margin: rem(80px);
 // }
 
-.profit_img {
-    height: rem(90px);
-}
+// .profit_img {
+//     height: 100px;
+//     width: 100px;
+// }
 

@@ -19,29 +19,72 @@
     position: absolute;
     left: 10%;
     top:10%;
+
+    @include phone {
+        left: 7%;
+        top: 5%;
+    }
 }
 
 .vertical-accordeon {
     position: absolute;
-    width:50%;
+    //width:50%;
     top:0;
     right: 0;
     display: flex;
     justify-content: flex-end;
     height: 100%;
 }
-
 .vertical-accordeon__item {
+    display: flex;
     width:auto;
-    height: 100%;    
+    height: 100%;
+   
+}
+
+.vertical-accordeon__textblock {
+    width: 0; 
+    overflow: hidden;
+}
+
+.vertical-accordeon__item_active {
+    width: 100%;
+
+    .vertical-accordeon__textblock {
+        width: auto; 
+        overflow: hidden;
+        background: rgba(47,50,52, 0.93);
+        padding: 60px 30px 0px 30px;
+
+        @include phone {
+            display: none;
+        }
+
+    }
+
+    
+
+}
+
+.vertical-accordeon__text {
+    @include text;
+    color:#fff;
 }
 
 .vertical-accordeon__link {
+    display: inline-block;
+    height: 100%;
     font-family: 'gagalinregular';
 	font-size: rem(40px);
     color:white;
     margin: auto;
     line-height: rem(110px);
+    background-size: cover;
+    background-position: center bottom;  
+    
+    @include phone {
+    line-height: rem(70px);
+    }
 }
 
 .vertical-accordeon__link div {
@@ -53,9 +96,10 @@
     //background-size: cover;
     //background-position: center bottom;
     width:rem(110px);
+    @include phone {
+        width:rem(70px);
+    }
+
 }
 
-.vertical-accordeon__textblock {
-    width: 0; 
-    overflow: hidden;
-}
+

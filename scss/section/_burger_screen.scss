@@ -1,0 +1,133 @@
+.burger__screen {
+    background-color: rgba(0,0,0,0.31);
+    background-image: url(../img/burger/burger-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    
+}
+
+.burger__wrapper {
+    display: flex;
+	width: 90%;
+	margin: 0 auto;
+	height: 100%;
+	align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.burger__slider {
+    display:flex;
+    position: relative;
+    height: 70%;
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+}
+
+.burger__pic-img {
+    margin: 30% 0;
+}
+.burger__ingridients {
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    width:rem(90px);
+    height: rem(90px);
+    background-color: #f08c33;
+    border-radius: 5px;
+    text-align: center;
+    color:#fff;
+}
+
+.burger__calories {
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    width:rem(90px);
+    height: rem(90px);
+    border-radius: 5px;
+    text-align: center;
+    color:#fff;
+
+    @include tablet {
+        top:0;
+        right: 0;
+        left:80%;
+    }
+}
+
+.burger__calories-num {
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:90px;
+    height: 90px;
+    margin: -50px 0px;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'gagalinregular';
+}
+.burger__calories-num span {
+    font-size: 14px;
+}
+
+.burger__btn-ingr, .burger__btn-cal {
+    width:60px;
+    height: 60px;
+    margin: auto;
+    fill:#fff;
+
+}
+
+.btn__desc {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'gagalinregular';
+}
+
+.burger__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.burger__content-text {
+    @include text;
+    color: #fff;
+  }
+  
+.burger__content-order {
+    display: flex;
+}
+
+  .burger__content-price {
+    font-size: 72px;
+    line-height: 24px;
+    font-family: 'gagalinregular';
+    color: #e35028;
+}
+  .burger__content-price--currency {
+    font-size: 30px;
+  }
+
+  .screen_scroll-down--left {
+    transform: rotate(90deg);
+  }
+
+  .screen_scroll-down--right {
+    transform: rotate(-90deg);
+  }

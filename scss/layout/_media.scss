@@ -15,4 +15,14 @@
     }
 }
 
+@mixin phone--small{
+    @media screen and (max-width: 375px){
+        @content;
+    }
+}
 
+@mixin tablet--big{
+    @media screen and (max-width: 900px){
+        @content;
+    }
+}

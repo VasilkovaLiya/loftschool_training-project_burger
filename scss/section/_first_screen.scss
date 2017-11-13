@@ -1,5 +1,5 @@
 .first_screen {
-	background: url('../img/bg2.png') center center no-repeat;
+	background: url('../img/bg.jpg') center center no-repeat;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -16,6 +16,9 @@
   
 .first_wrapper {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;	
 }
 
   .header {
@@ -36,7 +39,7 @@
   
   .we-do {
 	position: absolute;
-	top:25%;
+	top:20%;
 	flex: .8;
 	display: flex;
 	align-items: center;
@@ -44,6 +47,10 @@
 	@include tablet {
 		flex-direction: column;
 		padding: 0 150px;
+	}
+	@include phone {
+		
+		padding: 0;
 	}
   }
 	
@@ -53,6 +60,16 @@
 	// 	}
 	// } 
 
+.main-title--modif {
+	@include phone {
+		font-size: 63px;
+	}
+
+	@include phone--small {
+		font-size: 30px;
+	}
+}
+
   .we-do__descr {
 		margin-left: 40px;
 		margin-top: -35px;
@@ -60,6 +77,13 @@
 		@include tablet {
 			text-align: center;
 			margin-top:50px;
+		}
+		@include phone {
+			margin-top: 10px;
+		}
+
+		@include tablet--big {
+			margin-left: 0;
 		}
 }
 	
@@ -149,16 +173,105 @@
 	font-size:rem(13px);
 }
 
+.hamb-menu {
+	display: none;
+	width:100%;
+	z-index: 1;
+	position: absolute;
+	top:0;
+	background: rgba($color: #2f3234, $alpha: 0.99);
+	height: 100%;
+
+	
+}
+
+.hamb-menu__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo_container {
+	@include tablet {
+		margin:10px 0px 0px 20px;
+
+	}
+}
+.closeIcon {
+	margin: 30px 20px 0px 0px;
+}
+.hamb-menu__navigation {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-content: center;
+
+}
+
+.hamb-menu__item {
+	&:last-child {
+		
+	  .hamb-menu__link:after {
+		display: none;
+	  }
+	}
+}
+
+.hamb-menu__link {
+	display: inline-block;
+	margin: 30px;
+	font-family: 'ubunturegular';
+	color:#fff;
+	text-transform: uppercase;
+	font-size: rem(24px);
+	//line-height: rem(40px);
+	position: relative;
+	&:after {
+	  content: "";
+	  display: block;
+	  width: 6px;
+	  height: 6px;
+	  border-radius: 50%;
+	  background: #fff;   
+		position: absolute;
+		left:50%;
+		top:200%;
+	}
+}
+
+// .menuOpen {
+// 	display: block;
+// 	background: #2f3234;
+// 	height: 100vh;
+// 	width:100%;
+// }
+
 .we-do__img img {
 	//max-width: 100%;
 	width: rem(460px);
+	@include tablet--big {
+		width: rem(416px);
+	}
+
+	@include phone {
+		width: rem(320px);
+	}
+	
 }
 
 .we-do_second-slogan {
 	font-family: 'lifehackmedium';
 	font-size:rem(65px);
 	color: #FFF;
-	
+	@include phone {
+		font-size: 54px;
+		line-height: 48px;
+	}
+
+	@include phone--small {
+		font-size: rem(40px);
+		line-height: rem(36px);
+
+	}
 }
 
 .screen_scroll-down {
