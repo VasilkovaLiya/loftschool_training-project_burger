@@ -50,6 +50,8 @@
     font-size: rem(24px);
   
     &:before {
+      transition: .5s;
+      margin-right: 10px;
       content: "";
       height: 0;
       width: 0;
@@ -79,9 +81,9 @@
     
   }
 
-  .team-acco__pic {
+  .team-acco__pic-img {
       border-radius: 50%;
-      overflow: hidden;
+      
   }
   
   .team-acco__text {
@@ -107,20 +109,24 @@
       }
   }
   .team-acco__content {
+    // height: 0;
+    // overflow:hidden;
     display: none;
   }
   
   .team-acco__item_active {
-    .team-acco__trigger {
-      color: rgb(236, 223, 39);
+    // .team-acco__trigger {
+    //   color: rgb(236, 223, 39);
   
-      &:before {
-        transform: rotate(-180deg);
-      }
-    }
+    //   &:before {
+    //     transform: rotate(-180deg);
+    //   }
+    // }
   
     .team-acco__content {
       display: block;
+      //height: auto;
+      overflow: visible;
       display: flex;
       margin: 15px;
 
@@ -139,3 +145,14 @@
           align-items: center;
       };
   }
+
+   .team-acco__trigger--active {
+
+    .team-acco__trigger {
+        color: rgb(236, 223, 39);
+    
+        &:before {
+          transform: rotate(-180deg);
+        }
+      }
+    }

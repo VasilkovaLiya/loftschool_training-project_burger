@@ -897,6 +897,10 @@ body {
   font-family: 'gagalinregular';
   font-size: 1.5rem; }
   .team-acco__trigger:before {
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    margin-right: 10px;
     content: "";
     height: 0;
     width: 0;
@@ -934,9 +938,8 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
-.team-acco__pic {
-  border-radius: 50%;
-  overflow: hidden; }
+.team-acco__pic-img {
+  border-radius: 50%; }
 
 .team-acco__text {
   color: #fff;
@@ -964,15 +967,9 @@ body {
 .team-acco__content {
   display: none; }
 
-.team-acco__item_active .team-acco__trigger {
-  color: #ecdf27; }
-  .team-acco__item_active .team-acco__trigger:before {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg); }
-
 .team-acco__item_active .team-acco__content {
   display: block;
+  overflow: visible;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1007,6 +1004,13 @@ body {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center; } }
+
+.team-acco__trigger--active .team-acco__trigger {
+  color: #ecdf27; }
+  .team-acco__trigger--active .team-acco__trigger:before {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
 
 .menu_screen {
   background-color: rgba(236, 234, 234, 0.31);
@@ -1067,12 +1071,23 @@ body {
 
 .vertical-accordeon__textblock {
   width: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: .3s;
+  -o-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear; }
 
 .vertical-accordeon__item_active {
   width: 100%; }
+  .vertical-accordeon__item_active .vertical-accordeon__link {
+    color: #f9b43b; }
   .vertical-accordeon__item_active .vertical-accordeon__textblock {
-    width: auto;
+    width: 450px;
     overflow: hidden;
     background: rgba(47, 50, 52, 0.93);
     padding: 60px 30px 0px 30px; }

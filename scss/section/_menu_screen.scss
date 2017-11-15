@@ -39,19 +39,30 @@
     display: flex;
     width:auto;
     height: 100%;
+     
    
 }
 
 .vertical-accordeon__textblock {
     width: 0; 
     overflow: hidden;
+    //transition: all 1s ease;
+    transition-property: width;
+    transition-duration:.3s;
+    //transition-delay:1s;
+    transition-timing-function:linear;
+   
 }
 
 .vertical-accordeon__item_active {
     width: 100%;
+    //transition: 2s;
+    .vertical-accordeon__link {
+        color:#f9b43b;
+    }
 
     .vertical-accordeon__textblock {
-        width: auto; 
+        width: 450px; 
         overflow: hidden;
         background: rgba(47,50,52, 0.93);
         padding: 60px 30px 0px 30px;
@@ -67,6 +78,7 @@
 }
 
 .vertical-accordeon__text {
+    
     @include text;
     color:#fff;
 }
