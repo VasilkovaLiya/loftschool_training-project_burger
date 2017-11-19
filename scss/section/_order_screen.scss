@@ -11,12 +11,26 @@
 .order_wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     height: 100%;
+    align-items: center;
+    justify-content: center;
 }
+@-moz-document url-prefix() {
+    .order__content-title {
+        margin-top: 60px;
+    }
+    }
 
+
+.form {
+    margin-top: 40px;
+    @include tablet {
+        margin-top: 35px;
+    }
+}
 .form__content {
-    margin-bottom: 150px;
+    margin-bottom: 110px;
     display: flex;
     color: #fff;
     text-align: left;
@@ -42,6 +56,7 @@
 
     @include phone {
         width: 100%;
+        padding: 5px 15px;
     }
 }
 
@@ -210,7 +225,7 @@ margin-right: 15px;
 .row2, .row3, .row4 {
     @include phone {
         align-self: center;
-        margin-top: rem(40px);
+        margin-top: rem(5px);
     }
     @include phone--small {
         margin-top: rem(20px);

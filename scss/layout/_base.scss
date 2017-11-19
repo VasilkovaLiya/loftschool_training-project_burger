@@ -98,6 +98,12 @@ body {
   height: rem(38px);
   background-color: #2f3234;   
   display: flex;
+width: 130px;
+  
+  @include phone {
+    margin: 0 auto;
+    width: rem(130px);
+  }
 } 
 
 .order-link {
@@ -111,8 +117,10 @@ body {
 .main_title {
   
 	font-family: 'gagalinregular';
-	font-size:rem(50px);
+	font-size:rem(72px);
   color: #f9b43b;
+  line-height: rem(64px);
+ 
  
   @include phone {
     font-size: 50px;
@@ -127,7 +135,7 @@ body {
 
 .main_title--black {
 	font-family: 'gagalinregular';
-	font-size:rem(50px);
+	font-size:rem(72px);
   color: #2f3234;
 
   @include phone {
@@ -143,8 +151,9 @@ body {
 
 .main_title--white {
 	font-family: 'gagalinregular';
-	font-size:rem(50px);
+	font-size:rem(72px);
   color: #ffffff;
+  line-height: 64px;
 
   @include phone {
     font-size: 50px;
@@ -160,7 +169,7 @@ body {
 
 
 @mixin text{
-  font-family: ubuntulight;
+  font-family: 'ubuntulight';
   font-size: rem(14px);
   font-weight: 300;
   line-height: rem(24px);

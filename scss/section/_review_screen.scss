@@ -1,121 +1,122 @@
 .review__list{
-  height:100%;
-  display: flex;
-  flex-wrap: wrap;
+	height:100%;
+	display: flex;
+	flex-wrap: wrap;
+	
+  /*   обнуление стилей списка */
+	list-style: none;
+	padding: 0;
+  }
   
-/*   обнуление стилей списка */
-  list-style: none;
-  padding: 0;
-}
-
-/* .review_item_pair { */
-  /* display: flex;   */
-/* } */
-
-.review_item {
-/* 	flex-grow: 1; */
-/* 	min-height:rem(327px);
-	flex-basis:rem(276px); */
-  width: 25%;
-  height: 50%;
-	overflow:hidden;
-	//background: rgba($color: #313030, $alpha: 0.8);
-	filter: grayscale(1);
-	
-	
-	
-	
-	@include tablet {
-		width: 50%;
-		height: 25%;
-	}
+  /* .review_item_pair { */
+	/* display: flex;   */
+  /* } */
   
-}
-
-.review_descr {
-	
-	opacity: 0;
-	height: 100%;
-	padding: 50px 30px 30px 20px;
-	@include tablet {
-		padding: 30px 20px 10px 20px;
-		text-align: center;
-	}
-	
-	.review_item &:hover {
-		opacity: 1;
-		
+  .review_item {
+  /* 	flex-grow: 1; */
+  /* 	min-height:rem(327px);
+	  flex-basis:rem(276px); */
+	width: 25%;
+	height: 50%;
+	  overflow:hidden;
+	  //background: rgba($color: #313030, $alpha: 0.8);
+	  filter: grayscale(1);
+	  
+	  
+	  
+	  
+	  @include tablet {
+		  width: 50%;
+		  height: 25%;
 	  }
-
-}
-
-
-
-
-.review_item1 {
 	
-	
-	background-size: cover;
-	background-clip: padding-box;
-	background-position: center center;
-	background-origin: content-box;	
-}
-.review_item2 {
-	background: url(../img/review_img_2.png) ;
+  }
+  
+  .review_descr {
+	  
+	  opacity: 0;
+	  height: 100%;
+	  padding: 50px 30px 30px 20px;
+	  @include tablet {
+		  padding: 30px 20px 10px 20px;
+		  text-align: center;
+	  }
+	  
+	  .review_item &:hover {
+		  opacity: 1;
+		  
+		}	
+  
+  }
+  
+  
+  
+  
+  .review_item1 {
+	background: url(../img/review_img_1.jpg) ;
 	background-size: cover;	
 background-clip: padding-box;	
-}
-.review_item3 {
-	background: url(../img/review_img_3_2.png) ;
-	background-size: cover;	
-background-clip: padding-box;	
-}
-.review_item4 {
-	background: url(../img/review_img_4.png) ;
-	background-size: cover;	
-background-clip: padding-box;	
-}
-.review_item5 {
-	background: url(../img/review_img_5.png) ;
-	background-size: cover;	
-background-clip: padding-box;	
-}
-.review_item6 {
-	background: url(../img/review_img_6.png) ;
-	background-size: cover;	
-background-clip: padding-box;	
-}
-.review_item7{
-	background: url(../img/review_img_7.png) ;
-	background-size: cover;	
-background-clip: padding-box;	
-}
-.review_item8 {
-	background: url(../img/review_img_8.png) ;
-	background-size: cover;
-background-clip: padding-box;	
-}
+  }
+  .review_item2 {
+	  background: url(../img/review_img_2.jpg) ;
+	  background-size: cover;	
+  background-clip: padding-box;	
+  }
+  .review_item3 {
+	  background: url(../img/review_img_3.jpg) ;
+	  background-size: cover;	
+  background-clip: padding-box;	
+  }
+  .review_item4 {
+	  background: url(../img/review_img_4.jpg) ;
+	  background-size: cover;	
+  background-clip: padding-box;	
+  }
+  .review_item5 {
+	  background: url(../img/review_img_5.jpg) ;
+	  background-size: cover;	
+  background-clip: padding-box;	
+  }
+  .review_item6 {
+	  background: url(../img/review_img_6.jpg) ;
+	  background-size: cover;	
+  background-clip: padding-box;	
+  }
+  .review_item7{
+	  background: url(../img/review_img_7.jpg) ;
+	  background-size: cover;	
+  background-clip: padding-box;	
+  }
+  .review_item8 {
+	  background: url(../img/review_img_8.jpg) ;
+	  background-size: cover;
+  background-clip: padding-box;	
+  }
+  
+  
+  .review_name {
+	  font-family: 'gagalinregular';
+	  font-size: rem(14px);
+	  color: #fff;
+	  margin-bottom: 20px;
+  
+	  @include phone {
+		  font-size: 24px;
+		  line-height: 28px;
+	  }
+  
+  }
+  .review_text {
+	  @include text;
+	  color: #fff;
+	  margin-bottom: 20px;
+	  overflow: hidden;
+  
+	  @include phone {
+		  display:none;
+	  }
+  }
 
-
-.review_name {
-	font-family: 'gagalinregular';
-	font-size: rem(14px);
-	color: #fff;
-	margin-bottom: 20px;
-
-	@include phone {
-		font-size: 24px;
-		line-height: 28px;
-	}
-
-}
-.review_text {
-	@include text;
-	color: #fff;
-	margin-bottom: 20px;
-	overflow: hidden;
-
-	@include phone {
-		display:none;
-	}
-}
+  .review__popup {
+	display:none; 
+  }

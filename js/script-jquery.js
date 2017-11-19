@@ -28,6 +28,30 @@ $(document).ready(function(){
         }
     });
 
+  
 
 })
+
+$(document).ready(function(){
+   
+    var smallSize = false;
+    $(window).resize(function(){
+      if (!smallSize && $(window).width() <= 480) {
+        $(".seeReview").text("Читать отзыв!")
+        smallSize = true;
+      }
+    })
+    
+    $('.seeReview').on('click', e  => {
+        e.preventDefault ()
+        let link = $(e.currentTarget);
+        let rName= link.parent().siblings('.review_name').text();
+        let rText= link.parent().siblings('.review_text').text();
+        $('.review_name--black').text('rName');
+        $('.review_name--text').text('rText');        
+    
+    })
+   
+})
+
 

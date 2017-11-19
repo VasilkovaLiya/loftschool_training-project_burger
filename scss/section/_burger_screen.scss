@@ -4,14 +4,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    
+    position: relative;
     
 }
 
 .burger__wrapper {
     display: flex;
-	width: 90%;
-	margin: 0 auto;
+	width: 100%;
+	//margin: 0 auto;
 	height: 100%;
 	align-items: center;
     justify-content: center;
@@ -22,21 +22,45 @@
 .burger__slider {
     display:flex;
     position: relative;
-    height: 70%;
+    height: 98%;
+    align-items: center;
 
     @include tablet {
         flex-direction: column;
+        max-width: 595px;
+        justify-content: center;
+    }
+    @include phone {
+        justify-content: center;
+        max-width: 345px;
     }
 
+}
+.burger__pic {
+    @include tablet {
+        margin-top: 150px;
+    }
+    @include phone {
+        margin-top: 110px;
+    }
 }
 
 .burger__pic-img {
     margin: 30% 0;
+    @include tablet {
+        margin: 15px 0;
+    }
+    @include phone {
+        max-width: 300px;
+        margin: 5px 0;
+    }
 }
+
+ 
 .burger__ingridients {
     position: absolute;
-    top:0;
-    left:0;
+    top:12%;
+    left:2%;
     display: flex;
     flex-direction: column;
     width:rem(90px);
@@ -45,11 +69,67 @@
     border-radius: 5px;
     text-align: center;
     color:#fff;
+    border-radius: 5px;
+
+    &:hover {
+        .ingridients__table {
+            display: block;
+            
+            
+        }
+        
+      }	
+    
+     @include phone {
+        top:8%;  
+     } 
+    
+}
+.ingridients__table {
+    display: none;
+    position: absolute;
+    left:85px;
+    top:0;
+    font-family: "ubunturegular";
+    background:  rgba(255, 255, 255, 0.9);
+    color: #000;
+    border-radius: 10px;
+    width: 270px;
+}
+
+.ingridients__table tr {
+  height: 54px;
+}
+
+td:first-child {
+    width:80px;
+}
+
+td:nth-child(2) {
+    width:100px;
+    text-align: left;
+    @include text;
+    font-family: 'ubuntumedium';
+}
+
+td:nth-child(3) {
+    width:70px;
+    text-align: right;
+    @include text;
+}
+
+.ingridients__svg {
+    width: 38px;
+    height: 38px;
+    
 }
 
 .burger__calories {
+    // background-image: url(../img/burger/calory.png);
+    // background-size: cover;
+    // background-repeat: no-repeat;
     position: absolute;
-    bottom:0;
+    bottom:12%;
     left:0;
     display: flex;
     flex-direction: column;
@@ -60,9 +140,14 @@
     color:#fff;
 
     @include tablet {
-        top:0;
+        top:10%;
         right: 0;
         left:80%;
+    }
+    @include phone {
+        top:6%;
+        right: 0;
+        left:76%;
     }
 }
 
@@ -74,10 +159,10 @@
     flex-direction: column;
     text-align: center;
     width:90px;
-    height: 90px;
+    height: 95px;
     margin: -50px 0px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 26px;
     font-family: 'gagalinregular';
 }
 .burger__calories-num span {
@@ -101,33 +186,87 @@
 .burger__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    height: 480px;
+    margin-left: 15px;
+    @include tablet {
+        align-items: center;
+    }
+    @include phone {
+        max-width: 320px;
+        text-align: center;
+        height: 250px;
+        
+    }
 }
 
 
 .burger__content-text {
     @include text;
     color: #fff;
+    margin-top: 35px;
+    @include tablet {
+    text-align: center;
+    }
+    @include phone {
+    margin-top: 15px;
+    }
   }
   
 .burger__content-order {
     display: flex;
+    margin-top: 60px;
+    @include phone {
+        margin-top: 15px;
+    }
+    
 }
 
   .burger__content-price {
     font-size: 72px;
-    line-height: 24px;
+    line-height: 12px;
     font-family: 'gagalinregular';
     color: #e35028;
+    margin-right: 15px;
+    @include phone {
+        font-size: 50px;
+    }
 }
+
   .burger__content-price--currency {
     font-size: 30px;
+    @include phone {
+        font-size: 24px;
+    }
   }
 
   .screen_scroll-down--left {
     transform: rotate(90deg);
+    position: absolute;
+    left: 3.5%;
+    top: 50%;
+    @include tablet {
+        left: 5%;
+    }
   }
 
   .screen_scroll-down--right {
     transform: rotate(-90deg);
+    position: absolute;
+    right:3.5%;
+    top: 50%;
+    @include tablet {
+        right: 5%;
+    }
+  }
+
+  .burger__content-title {
+      @include tablet {
+        max-width: 470px;
+        text-align: center;
+        margin-top: 25px;
+      }
+      @include phone {
+        margin-top: 15px;
+      }
   }

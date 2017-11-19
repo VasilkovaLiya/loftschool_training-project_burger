@@ -12,15 +12,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- <link rel="icon" type="image/png" href="./img/icon.png" sizes="16x16"> -->
+<link rel="stylesheet" href="css/jquery.fancybox.css" />
 <link rel="stylesheet" href="css/normalize.css" />
 <link rel="stylesheet" href="css/main.css">
 <link rel="shortcut icon" href="img/favicon_burger.ico" type="image/x-icon">
 <script src = "js/jquery-3.2.1.js"></script> 
  <!--скрипт для старых браузеров IE-->
 
- <!--[if lt IE 9]>
+ [if lt IE 9]>
      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
- <![endif]-->
+ [endif]
  <script src="js/svg4everybody.js"></script>
  <script>
    svg4everybody();
@@ -229,15 +230,52 @@
 				
 			</section>
 			<section class="screen burger__screen">
+				<a href="#" class="screen_scroll-down--left">
+						<img src="img/arrow-scroll.svg" alt="Влево">
+				</a>
+				<a href="#" class="screen_scroll-down--right">
+						<img src="img/arrow-scroll.svg" alt="Вправо">
+				</a>
 				<div class="wrapper burger__wrapper">
-					<a href="#" class="screen_scroll-down--left">
-							<img src="img/arrow-scroll.svg" alt="Влево">
-					</a>
+					
 						
 					<div class="burger__slider">
 							<div class="burger__ingridients">
 								<svg class="burger__btn-ingr"><use xlink:href="icons/sprite.svg#burger"/></svg>
 								<div class="btn__desc">Состав</div>
+								<table class='ingridients__table'>
+										<tr>
+											<td><svg class="ingridients__svg" style="fill:#e2532b;"><use xlink:href="icons/sprite.svg#beef"/></svg></td>
+											<td>Говядина</td>
+											<td>300г</td>
+										</tr>
+										<tr>
+											<td><svg class="ingridients__svg" style="fill:#f8b43a;"><use xlink:href="icons/sprite.svg#buns"/></svg></td>
+											<td>Булочки</td>
+											<td>100г</td>
+										</tr>
+										<tr>
+											<td><svg class="ingridients__svg" style="fill:#8dc143;"><use xlink:href="icons/sprite.svg#salad"/></svg></td>
+											<td>Зелень</td>
+											<td>70г</td>
+										</tr>
+										<tr>
+											<td><svg class="ingridients__svg" style="fill:#e2532b;"><use xlink:href="icons/sprite.svg#sauce"/></svg></td>
+											<td>Соус</td>
+											<td>150г</td>
+										</tr>
+										<tr>
+											<td><svg class="ingridients__svg" style="fill:#8dc143;"><use xlink:href="icons/sprite.svg#cucumber"/></svg></td>
+											<td>Овощи</td>
+											<td>200г</td>
+										</tr>
+										<tr>
+											<td><svg class="ingridients__svg" style="fill:#f8b43a;"><use xlink:href="icons/sprite.svg#cheese"/></svg></td>
+											<td>Сыр</td>
+											<td>80г</td>
+										</tr>
+										
+								</table>
 							</div>
 							<div class="burger__calories">
 								<svg class="burger__btn-cal"><use xlink:href="icons/sprite.svg#kkal"/></svg>
@@ -263,9 +301,7 @@
 					</div>	
 
 					
-					<a href="#" class="screen_scroll-down--right">
-							<img src="img/arrow-scroll.svg" alt="Вправо">
-					</a>
+					
 				</div>
 				
 			</section>		
@@ -282,7 +318,7 @@
 									  <a href="#" class="team-acco__trigger">Дэниел Редклифф</a>
 									  <div class="team-acco__content">
 										<div class="team-acco__pic">
-											<img class="team-acco__pic-img" src="img/team-photo.png" alt="">
+											<img class="team-acco__pic-img" src="img/team-photo.jpg" alt="">
 										  </div>
 										<div class="team-acco__text">
 										  <div class="team-acco__text-title">Оператор</div>
@@ -305,7 +341,7 @@
 											<img class="team-acco__pic-img" src="img/team-photo.png" alt="">
 										   </div> -->
 										   <div class="team-acco__pic">
-											<img class="team-acco__pic-img" src="img/team-photo.png" alt="">
+											<img class="team-acco__pic-img" src="img/team-photo.jpg" alt="">
 										  </div>
 										<div class="team-acco__text">
 										  <div class="team-acco__text-title">Оператор</div>
@@ -321,7 +357,7 @@
 									  <a href="#" class="team-acco__trigger">Джейк Финн</a>
 									  <div class="team-acco__content">
 										<div class="team-acco__pic">
-										  <img class="team-acco__pic-img" src="img/team-photo.png" alt="">
+										  <img class="team-acco__pic-img" src="img/team-photo.jpg" alt="">
 										</div>
 										<div class="team-acco__text">
 										  <div class="team-acco__text-title">Оператор</div>
@@ -337,7 +373,7 @@
 									  <a href="#" class="team-acco__trigger">Николай Иванов</a>
 									  <div class="team-acco__content">
 										<div class="team-acco__pic">
-										  <img class="team-acco__pic-img" src="img/team-photo.png" alt="">
+										  <img class="team-acco__pic-img" src="img/team-photo.jpg" alt="">
 										</div>
 										<div class="team-acco__text">
 										  <div class="team-acco__text-title">Оператор</div>
@@ -406,70 +442,74 @@
 						<h2 class="main_title">Отзывы</h2>
 				</div>
 				<ul class="review__list">
-					<li class="review_item review_item1" style="background: url(img/review_img_1.jpg) no-repeat; background-size: cover;
-					background-clip: padding-box;
-					background-position: center center;
-					background-origin: content-box;">
-							<div class="review_descr review_descr">
-								<div class="review_name">Константин Спилберг</div>
-								<div class="review_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-								<div class="order--grey"><a class="order-link" href="#">Подробнее</a></div>
-							</div>
-					</li>
+					<li class="review_item review_item1 ">
+								<div class="review_descr">
+									<div class="review_name">Константин Спилберг</div>
+									<div class="review_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+									<div class="order--grey"><a data-fancybox data-src="#hidden-content" href="javascript:;" class="order-link seeReview btn">Подробнее</a></div>
+									
+								</div>
+						</li>
 					<li class="review_item review_item2 ">
 							<div class="review_descr">
 								<div class="review_name">Константин Спилберг</div>
 								<div class="review_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-								<div class="order--grey"><a class="order-link" href="#">Подробнее</a></div>
+								<div class="order--grey"><a class="order-link seeReview" href="#">Подробнее</a></div>
 							</div>
 					</li>
+					
 					<li class="review_item review_item3 ">
 							<div class="review_descr">
 								<div class="review_name">Константин Спилберг</div>
 								<div class="review_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-								<div class="order--grey"><a class="order-link" href="#">Подробнее</a></div>
+								<div class="order--grey"><a class="order-link seeReview" href="#">Подробнее</a></div>
 							</div>
 					</li>
+				
 					<li class="review_item review_item4 ">
 							<div class="review_descr">
 								<div class="review_name">Константин Спилберг</div>
 								<div class="review_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-								<div class="order--grey"><a class="order-link" href="#">Подробнее</a></div>
+								<div class="order--grey"><a class="order-link seeReview" href="#">Подробнее</a></div>
 							</div>
 					</li>
 					<li class="review_item review_item5 ">
 							<div class="review_descr">
 								<div class="review_name">Константин Спилберг</div>
 								<div class="review_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-								<div class="order--grey"><a class="order-link" href="#">Подробнее</a></div>
+								<div class="order--grey"><a class="order-link seeReview" href="#">Подробнее</a></div>
 							</div>
 					</li>
 					<li class="review_item review_item6 ">
 							<div class="review_descr">
 								<div class="review_name">Константин Спилберг</div>
 								<div class="review_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-								<div class="order--grey"><a class="order-link" href="#">Подробнее</a></div>
+								<div class="order--grey"><a class="order-link seeReview" href="#">Подробнее</a></div>
 							</div>
 					</li>
 					<li class="review_item review_item7 ">
 							<div class="review_descr">
 								<div class="review_name">Константин Спилберг</div>
 								<div class="review_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-								<div class="order--grey"><a class="order-link" href="#">Подробнее</a></div>
+								<div class="order--grey"><a class="order-link seeReview" href="#">Подробнее</a></div>
 							</div>
 					</li>
 					<li class="review_item review_item8 ">
 							<div class="review_descr">
 								<div class="review_name">Константин Спилберг</div>
 								<div class="review_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
-								<div class="order--grey"><a class="order-link" href="#">Подробнее</a></div>
+								<div class="order--grey"><a class="order-link seeReview" href="#">Подробнее</a></div>
 							</div>
 					</li>
+					<div class="review__popup" id="hidden-content" >
+							<div class="review_name--black">1</div>
+							<div class="review_text--black">2</div>
+					</div>
 				</ul>
 			</section>
 			<section class="screen order_screen">
 				<div class="wrapper order_wrapper">
-				    <div class="main_title_div">
+				    <div class="order__content-title main_title_div">
 						<h2 class="main_title">Закажите доставку</h2>
 				    </div>
 					<div class="form">
@@ -516,7 +556,7 @@
 													<!-- Комментарий -->
 													<label class="form__block">
 													<div class="form__block-title">Комментарий</div>
-													<textarea autofocus class="form__input textarea"> </textarea> 
+													<textarea class="form__input textarea"> </textarea> 
 													</label>
 												
 											</div>
@@ -592,6 +632,10 @@
 
 		</div>
 	</div>	
+	
+
+	
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>	
 <script type="text/javascript" src="js/script-jquery.js"></script>	
 </body>

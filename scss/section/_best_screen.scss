@@ -16,21 +16,25 @@
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
-    
+    overflow: hidden;
+    //////разбораться с вылезанием за границы
     @include phone {
-        width: 90%;  
+        width: 98%;  
     }
 }
 
 .profit_content {
     display: flex;
     //flex-wrap:wrap;
-    margin-bottom: 150px;
-   margin-top: 90px;
+    margin-bottom: 90px;
+   margin-top: 60px;
     @include phone {
         flex-direction: column;
-        margin-bottom: 50px;
+       margin-bottom: 0px;
         margin-top: 0;
+    }
+    @include tablet {
+        margin-bottom: 50px;
     }
     
 }
@@ -42,7 +46,8 @@
     @include phone {
     display: flex;
     width: 98%;
-    margin:15px 0;
+    margin:5px 0;
+    align-items: center;
     }
 }
 
@@ -53,8 +58,9 @@
         display: flex;
         flex-direction: column;
         text-align: left;
-        margin-left: 40px;
+        margin-left: 30px;
         line-height: 24px;
+        width: 65%;
     }
 }
 
@@ -70,6 +76,8 @@
     @include phone {
         font-size: 24px;
         line-height: 28px;
+        margin-top: rem(20px);
+        margin-bottom: rem(10px);
     }
     
 }
@@ -77,16 +85,15 @@
 .descr_text {
       @include text;
       @include phone {
-          overflow: scroll;
+          //overflow: scroll;
       }
 }
 
-// .main_title_div {
-//     margin: rem(80px);
-// }
 
-// .profit_img {
-//     height: 100px;
-//     width: 100px;
-// }
+.profit_img {
+    @include phone {
+        width: 35%;
+    }
+    
+}
 

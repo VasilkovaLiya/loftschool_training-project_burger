@@ -39,6 +39,10 @@
     display: flex;
     width:auto;
     height: 100%;
+    width: rem(80px);
+    @include phone {
+        width: 65px;
+    }
      
    
 }
@@ -90,7 +94,7 @@
 	font-size: rem(40px);
     color:white;
     margin: auto;
-    line-height: rem(110px);
+    line-height: rem(80px);
     background-size: cover;
     background-position: center bottom;  
     
