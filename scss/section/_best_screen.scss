@@ -28,6 +28,7 @@
     //flex-wrap:wrap;
     margin-bottom: 90px;
    margin-top: 60px;
+   width: 100%;
     @include phone {
         flex-direction: column;
        margin-bottom: 0px;

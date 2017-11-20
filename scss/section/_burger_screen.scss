@@ -189,6 +189,7 @@ td:nth-child(3) {
     justify-content: flex-start;
     height: 480px;
     margin-left: 15px;
+    width: 100%;
     @include tablet {
         align-items: center;
     }
