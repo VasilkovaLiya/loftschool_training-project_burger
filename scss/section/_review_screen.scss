@@ -104,7 +104,15 @@ background-clip: padding-box;
 		  font-size: 24px;
 		  line-height: 28px;
 	  }
-  
+	
+	.review_name--black {
+		color:black;
+		font-family: 'gagalinregular';
+	  font-size: rem(14px);
+	  margin-bottom: 20px;
+	}    
+	
+
   }
   .review_text {
 	  @include text;
@@ -119,4 +127,24 @@ background-clip: padding-box;
 
   .review__popup {
 	display:none; 
-  }
+	margin: 10% 10%;
+	border-radius: 10px;
+	}
+	
+	.fancybox-close-small:after {
+    content: '×';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    font: 20px/30px Arial,"Helvetica Neue",Helvetica,sans-serif;
+    color: rgb(243, 43, 43);
+    font-weight: 300;
+    text-align: center;
+    border-radius: 50%;
+    border-width: 0;
+    background-color: transparent;
+    transition: background-color .25s;
+    box-sizing: border-box;
+    z-index: 2; }

@@ -143,6 +143,20 @@ body {
   padding: 0;
   border: 0; }
 
+.pagination {
+  position: fixed;
+  top: 5%;
+  right: 5%; }
+
+.pagination__link:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 10px 16px; }
+
 @font-face {
   font-family: 'gagalinregular';
   src: url("../fonts/gagalin-regular-webfont.eot");
@@ -888,6 +902,37 @@ td:nth-child(3) {
   .burger__content-title {
     margin-top: 15px; } }
 
+.bx-wrapper {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.bx-wrapper .bx-next {
+  background: none; }
+
+.bx-wrapper .bx-prev {
+  background: none; }
+
+.bx-wrapper .bx-pager {
+  display: none; }
+
+.onepage-pagination {
+  right: 25px;
+  top: 5%; }
+
+.onepage-pagination li a:before {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.85); }
+
+.onepage-pagination li a.active:before {
+  width: 12px;
+  height: 12px;
+  border: 1px solid white;
+  margin-top: -4px;
+  left: 7px; }
+
 .review__list {
   height: 100%;
   display: -webkit-box;
@@ -978,6 +1023,11 @@ td:nth-child(3) {
     .review_name {
       font-size: 24px;
       line-height: 28px; } }
+  .review_name .review_name--black {
+    color: black;
+    font-family: 'gagalinregular';
+    font-size: 0.875rem;
+    margin-bottom: 20px; }
 
 .review_text {
   font-family: 'ubuntulight';
@@ -992,7 +1042,30 @@ td:nth-child(3) {
       display: none; } }
 
 .review__popup {
-  display: none; }
+  display: none;
+  margin: 10% 10%;
+  border-radius: 10px; }
+
+.fancybox-close-small:after {
+  content: '×';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  font: 20px/30px Arial,"Helvetica Neue",Helvetica,sans-serif;
+  color: #f32b2b;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 50%;
+  border-width: 0;
+  background-color: transparent;
+  -webkit-transition: background-color .25s;
+  -o-transition: background-color .25s;
+  transition: background-color .25s;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 2; }
 
 .team_screen {
   background-color: rgba(0, 0, 0, 0.31);

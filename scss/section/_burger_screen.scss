@@ -24,6 +24,7 @@
     position: relative;
     height: 98%;
     align-items: center;
+   
 
     @include tablet {
         flex-direction: column;
@@ -33,6 +34,7 @@
     @include phone {
         justify-content: center;
         max-width: 345px;
+        
     }
 
 }
@@ -270,4 +272,43 @@ td:nth-child(3) {
       @include phone {
         margin-top: 15px;
       }
+  }
+
+  .bx-wrapper {
+      background: none;
+      border:none;
+      box-shadow: none;
+  }
+
+  .bx-wrapper .bx-next {
+      background:none;
+  }
+
+  .bx-wrapper .bx-prev {
+    background:none;
+}
+
+ .bx-wrapper .bx-pager{
+     display: none;
+ }
+
+ .onepage-pagination {
+    right: 25px;
+    top: 5%;
+ }
+
+ .onepage-pagination li a:before {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.85);
+     
+ }
+
+ .onepage-pagination li a.active:before{
+    width: 12px;
+    height: 12px;
+    //background: rgba(255, 255, 255, 0.85);
+    border: 1px solid white;
+    margin-top: -4px;
+    left: 7px;
   }
