@@ -13,7 +13,7 @@
 
 <!-- <link rel="icon" type="image/png" href="./img/icon.png" sizes="16x16"> -->
 <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
-<link rel="stylesheet" href="ops/onepage-scroll.css" />
+<!-- <link rel="stylesheet" href="ops/onepage-scroll.css" /> -->
 <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -35,7 +35,7 @@
  <script>
    svg4everybody();
  </script>
- <script type="text/javascript" src="ops/jquery.onepage-scroll.min.js"></script>
+ <!-- <script type="text/javascript" src="ops/jquery.onepage-scroll.min.js"></script> -->
 
 
 
@@ -45,12 +45,13 @@
 	<div class="main">
 		<!--<div class="maincontent">-->
 			<section class="screen first_screen" data-section-name="about">
+					<a name="about"></a>
 				<div class="wrapper first_wrapper">	
 					<header class="header">	
 							<div class="hamb-menu" id="hamb-menu__id" >
 									<div class="hamb-menu__container">
 										<div class="logo_container">						
-											<a href="" class="logo">
+											<a href="#about" class="logo">
 											<img src="img/logo.svg" alt="Mr.Burger" class="logo_img" />
 											</a>
 										</div>
@@ -62,22 +63,22 @@
 									<nav class="hamb-menu__navigation">
 										<ul class="hamb-menu__list">
 											<li class="hamb-menu__item">
-												<a href="#" class="hamb-menu__link">Почему мы</a>
+												<a href="#best" class="hamb-menu__link">Почему мы</a>
 											</li>
 											<li class="hamb-menu__item">
-												<a href="#" class="hamb-menu__link">Меню</a>
+												<a href="#menu" class="hamb-menu__link">Меню</a>
 											</li>
 											<li class="hamb-menu__item">
-												<a href="#" class="hamb-menu__link">Советы</a>
+												<a href="#burger" class="hamb-menu__link">Советы</a>
 											</li>	
 											<li class="hamb-menu__item">
-												<a href="#" class="hamb-menu__link">Кто мы</a>
+												<a href="#team" class="hamb-menu__link">Кто мы</a>
 											</li>	
 											<li class="hamb-menu__item">
-												<a href="#" class="hamb-menu__link">Свяжитесь с нами</a>
+												<a href="#contacts" class="hamb-menu__link">Свяжитесь с нами</a>
 											</li>	
 											<li class="hamb-menu__item">
-												<a href="#" class="hamb-menu__link">Контакты</a>
+												<a href="#contacts" class="hamb-menu__link">Контакты</a>
 											</li>	
 											
 										</ul>
@@ -94,32 +95,32 @@
 								<nav class="menu menu-fonts">
 									<ul class="menu__list">
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#best" class="menu__link">
 													О нас
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#burger" class="menu__link">
 												Бургеры
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#team" class="menu__link">
 												Команда
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#menu" class="menu__link">
 												Меню
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#review" class="menu__link">
 												Отзывы
 												</a>
 											</li>
 											<li class="menu__item">
-												<a href="#" class="menu__link">
+												<a href="#contacts" class="menu__link">
 												Контакты
 												</a>
 											</li>
@@ -189,13 +190,14 @@
 					</div>
 
 
-					<a href="#" class="screen_scroll-down">
+					<a href="#best" class="screen_scroll-down">
 							<img src="img/arrow-scroll.svg" alt="Вниз">
 					</a>
 				</div>	
 			</section>
-			<section class="screen best_screen" data-section-name="best">
+			<section class="screen best_screen" data-section-name="best" >
 				<div class="wrapper best_wrapper">
+						<a name="best"></a>
 					<div class="main_title_div">
 						<h2 class="main_title--black">Мы лучшие</h2>
 					</div>
@@ -244,6 +246,7 @@
 				
 			</section>
 			<section class="screen burger__screen" data-section-name="burger">
+					
 				<a href="#" class="screen_scroll-down--left">
 						<img src="img/arrow-scroll.svg" alt="Влево">
 				</a>
@@ -251,7 +254,7 @@
 						<img src="img/arrow-scroll.svg" alt="Вправо">
 				</a>
 				<div class="wrapper burger__wrapper">
-					
+						<a name="burger" ></a>	
 				<div class="slider__container">
 						<div class="burger__slider">
 								<div class="burger__ingridients">
@@ -384,6 +387,7 @@
 
 
 			<section class="screen team_screen" data-section-name="team"	>
+					<a name="team"></a>
 					<div class="wrapper team_wrapper">
 						<!--<div class="accordeon_wrapper">-->
 							<div class="main_title_div">
@@ -467,6 +471,7 @@
 					
 			</section>
 			<section class="screen menu_screen" data-section-name="menu">
+					<a name="menu"></a>
 				<div class="main_title_div menu__title">
 								<h2 class="main_title">Меню</h2>
 							</div>
@@ -514,6 +519,7 @@
 			</section>
 			
 			<section class="screen review_screen" data-section-name="review">
+					<a name="review"></a>
 				<div class="main_title div--hiddenWrapper">
 						<h2 class="main_title">Отзывы</h2>
 				</div>
@@ -585,45 +591,46 @@
 			</section>
 			<section class="screen order_screen" data-section-name="order">
 				<div class="wrapper order_wrapper">
+						<a name="order"></a>	
 				    <div class="order__content-title main_title_div">
 						<h2 class="main_title">Закажите доставку</h2>
 				    </div>
 					<div class="form">
-							<form action="" class="form__content">
+							<form action="data.php" class="form__content" id='form' method="post">
 									<div class="form-content__column">
 											
 												<div class="form__row">
 														<label class="form__block">
 														<div class="form__block-title">Имя</div>
-														<input type="text" class="form__input">
+														<input type="text" class="form__input" name="name" id='name'>
 														</label>
 														<label class="form__block">
 														<div class="form__block-title">Телефон</div>
-														<input type="text" class="form__input">
+														<input type="text" class="form__input" name="tel" id='tel'>
 														</label>
 												</div>
 												<div class="form__row">
 														<label class="form__block">
 														<div class="form__block-title">Улица</div>
-														<input type="text" class="form__input">
+														<input type="text" class="form__input" name="street" id='street'>
 														</label>
 												</div>
 												<div class="form__row">
 														<label class="form__block">
 														<div class="form__block-title">Дом</div>
-														<input type="text" class="form__input">
+														<input type="text" class="form__input" name="house" id='house'>
 														</label>
 														<label class="form__block">
 														<div class="form__block-title">Корпус</div>
-														<input type="text" class="form__input">
+														<input type="text" class="form__input" name="block" id='block'>
 														</label>
 														<label class="form__block">
 														<div class="form__block-title">Квартира</div>
-														<input type="text" class="form__input">
+														<input type="text" class="form__input" name="flat" id='flat'>
 														</label>
 														<label class="form__block">
 														<div class="form__block-title">Этаж</div>
-														<input type="text" class="form__input">
+														<input type="text" class="form__input" name="stage" id='stage'>
 														</label>
 												</div>
 									</div>							
@@ -632,19 +639,19 @@
 													<!-- Комментарий -->
 													<label class="form__block">
 													<div class="form__block-title">Комментарий</div>
-													<textarea class="form__input textarea"> </textarea> 
+													<textarea class="form__input textarea" name="comment"> </textarea> 
 													</label>
 												
 											</div>
 											<div class="form__row row2 column2">
 													<div class="form__block form__block--column">													
 														<label class='radio__label'>
-															<input type="radio" name="payment" class="radio__input" value="Потребуется сдача">
+															<input type="radio" name="payment" id="cash" class="radio__input" value="Потребуется сдача">
 															<span class="radio__custom"></span>
 															<span class="radio__text">Потребуется сдача</span>
 														</label>
 														<label class='radio__label'>
-															<input type="radio" name="payment" class="radio__input" value="Оплата по карте">
+															<input type="radio" name="payment" id="card" class="radio__input" value="Оплата по карте">
 															<span class="radio__custom"></span>
 															<span class="radio__text">Оплата по карте</span>
 														</label>
@@ -655,7 +662,7 @@
 											<div class="form__row row3  column2">													
 													<div class="form__block">
 														<label>
-															<input class="checkbox" type="checkbox" name="checkbox">
+															<input class="checkbox" type="checkbox" name="checkbox" id="noCall">
 															<span class="checkbox__custom"></span>
 															<span class="checkbox__text">Не перезванивать</span>
 														</label>
@@ -665,44 +672,53 @@
 											
 											</div>
 											<div class="form__row row4 column2">
-													<div class="order"><a class="order-link" href="#">Заказать</a></div>									
-													<div class="order--colorless"><a class="order-link" href="#">Очистить</a></div>	
+													<button type="submit" class="order"><span class="order-link">Заказать</span></button>									
+													<div class="order--colorless"><a class="order-link" id='reset' href="#">Очистить</a></div>	
 											</div>
 									</div>				
 																			
 																	
-							</form>
+							</form>								
+						
+							<div id="result" class="result"></div>
 					</div>
 				</div>
 			</section>
 			<section class="screen contacts_screen" data-section-name="contacts">
-					<div class="wrapper contacts_wrapper">
-							<div class="main_title div--hiddenWrapper">
-									<h2 class="main_title">Контакты</h2>
-							</div>
+					<div id='map' class="map">
+							<a name="contacts"></a>					
+						<div class="main_title div--hiddenWrapper">
+								<h2 class="main_title">Контакты</h2>
+						</div>
 					</div>
-					<foter class="footer">
+					<footer class="footer">
 							<div class="footer__wrapper">
 								<div class="footer__contacts">
 									<p class="footer__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</p>
 									<p class="footer__tel">+7 (812) 377-13-77</p>
 								</div>
-								<div class="socials">
+								<!-- <div class="socials">
 									<svg class="icons"><use xlink:href="icons/sprite.svg#vk"/></svg>
 									<svg class="icons"><use xlink:href="icons/sprite.svg#fb"/></svg>
 									<svg class="icons"><use xlink:href="icons/sprite.svg#inst"/></svg>
-									<svg class="icons"><use xlink:href="icons/sprite.svg#twitter"/></svg>
-									<!-- <ul class="socials__icons">
+									<svg class="icons"><use xlink:href="icons/sprite.svg#twitter"/></svg> -->
+									<ul class="socials">
 										<li class="socials__item">
-											svg.
-											vk</li>
-										<li class="socials__item">insta</li>
-										<li class="socials__item">tgm</li>
-										<li class="socials__item">ok</li>
-									</ul> -->
-								</div>
+											<a href="#" class="socials__links"><svg class="icons"><use xlink:href="icons/sprite.svg#vk"/></svg></a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__links"><svg class="icons"><use xlink:href="icons/sprite.svg#fb"/></svg></a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__links"><svg class="icons"><use xlink:href="icons/sprite.svg#inst"/></svg></a>
+										</li>
+										<li class="socials__item">
+											<a href="#" class="socials__links"><svg class="icons"><use xlink:href="icons/sprite.svg#twitter"/></svg></a>
+										</li>
+									</ul>
+								<!-- </div> -->
 							</div>
-					</foter>	
+					</footer>	
 			</section>
 			<!-- <ul class="pagination">
 				<li><a class='pagination__link' href="#about"></a></li>
@@ -719,7 +735,8 @@
 	</div>	
 	
 
-	
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>	
 <script type="text/javascript" src="fancybox/jquery.fancybox.min.js"></script>
 <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
 <script type="text/javascript" src="js/script.js"></script>	

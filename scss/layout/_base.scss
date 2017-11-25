@@ -81,6 +81,11 @@ body {
   height: rem(38px);
   background-color: #e45028;
   display: flex;
+  &:hover {
+    background-color: #c1401e;
+    cursor: pointer;
+    
+  }
   
 } 
 
@@ -88,6 +93,10 @@ body {
   width: rem(100px);
   height: rem(38px);
   display: flex;
+  &:hover {
+    background-color: #646261;
+    border-radius: 5px;
+  }
   
 } 
 
@@ -215,4 +224,25 @@ width: 130px;
     background: #fff;
     margin: 10px 16px;
 	}
+}
+
+.onepage-pagination {
+  right: 25px;
+  top: 9%;
+}
+
+.onepage-pagination li a:before {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.85);
+   
+}
+
+.onepage-pagination li a.active:before{
+  width: 12px;
+  height: 12px;
+  //background: rgba(255, 255, 255, 0.85);
+  border: 1px solid white;
+  margin-top: -4px;
+  left: 7px;
 }

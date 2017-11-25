@@ -128,46 +128,11 @@
 }
 
 
-//   #cash {display: none;}
-//   [for="cash"] {
-//     position: relative;
-//     display: block;
-//     width: 14px;
-//     height: 14px;
-//     border-radius: 100%;
-//     cursor: pointer;
-//   }
-  
-//   /* точка внутри */
-//   [for="cash"]:after {
-//     content: "";
-//     position: absolute;
-//     left: 40%; top: 40%;
-//     width: 20%;
-//     height: 20%;
-//     border-radius: 100%;
-//     background: #fff;        
-//   }
-  
-//   /* кружок */
-//   [for="cash"]:before {
-//     content: "";
-//     position: absolute;
-//     top: 8%; right: 8%; bottom: 8%; left: 8%;
-//     border-radius: 100%;
-//     background: #fff;  
-//   }
-//   #cash:checked ~ [for="cash"]:before {
-//     background: #fff;
-//   }
-//   #cash:checked ~ [for="cash"]:after {
-//     background: #e45028;  
-//   }
-  
+
 
 .checkbox,
 .radio__input {
-    display: none;
+    @include visuallyHidden;
 }
 .checkbox__custom,
 .radio__custom {
@@ -231,4 +196,23 @@ margin-right: 15px;
     @include phone--small {
         margin-top: rem(20px);
     }
+}
+
+button.order {
+    border-width: 0px;
+    cursor: pointer;
+}
+.result {
+    @include text;
+    color: #fff;
+    width: 40%;
+    text-align: center;
+    border: 4px solid #f9b43b;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20%;
+    background-color: #dfa338;
+    height: 150px;
+    left: 30%;
+    display: none;
 }

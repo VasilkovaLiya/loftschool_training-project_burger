@@ -124,6 +124,9 @@
 	  background: #fff;   
 	  margin: 0 16px;
 	}
+	&:hover {
+		color:#f9b43b;
+	}
   }
 	
 	.menu-hamburger-link {
@@ -281,7 +284,15 @@
 	bottom:5%;
 	left:49.5%;
 	
+	
 }
+
+.screen_scroll-down img {
+	&:hover {
+		fill:#f9b43b;
+	}
+}
+
 
 // .first_screen {
 // 	background-color: rgba(0,0,0,0.31);
