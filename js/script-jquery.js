@@ -204,7 +204,7 @@ $(document).ready(function(){
        
        
    });
-   
+   $(document).ready(function(){
    ymaps.ready(init);
    var myMap;
 
@@ -242,4 +242,4 @@ $(document).ready(function(){
       
    }
 
-  
+})
