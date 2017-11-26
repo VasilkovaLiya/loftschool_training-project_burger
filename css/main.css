@@ -712,7 +712,8 @@ body {
   @media screen and (max-width: 480px) {
     .burger__pic-img {
       max-width: 300px;
-      margin: 5px 0; } }
+      margin: 5px 0;
+      height: 200px; } }
 
 .burger__ingridients {
   position: absolute;
