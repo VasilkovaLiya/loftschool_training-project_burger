@@ -1,6 +1,6 @@
 .burger__screen {
-    background-color: rgba(0,0,0,0.31);
-    background-image: url(../img/burger/burger-bg.jpg);
+    background-color: rgba(0,0,0,0.31);    
+    background: linear-gradient(to top, #f9b43b 20%, #eb8c38 40%, #f9b43b 80%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -65,8 +65,8 @@
     left:2%;
     display: flex;
     flex-direction: column;
-    width:rem(90px);
-    height: rem(90px);
+    width:rem(80px);
+    height: rem(80px);
     background-color: #f08c33;
     border-radius: 5px;
     text-align: center;
@@ -83,7 +83,7 @@
       }	
     
      @include phone {
-        top:8%;  
+        top:10%;  
      } 
     
 }
@@ -147,7 +147,7 @@ td:nth-child(3) {
         left:80%;
     }
     @include phone {
-        top:6%;
+        top:8%;
         right: 0;
         left:76%;
     }

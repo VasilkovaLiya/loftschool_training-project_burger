@@ -93,6 +93,8 @@ body {
   width: rem(100px);
   height: rem(38px);
   display: flex;
+  border: none;
+  background: none;
   &:hover {
     background-color: #646261;
     border-radius: 5px;

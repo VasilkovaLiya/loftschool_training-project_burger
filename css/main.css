@@ -63,7 +63,9 @@ body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  border: none;
+  background: none; }
   .order--colorless:hover {
     background-color: #646261;
     border-radius: 5px; }
@@ -471,6 +473,9 @@ body {
   text-transform: uppercase;
   font-size: 1.5rem;
   position: relative; }
+  @media screen and (max-width: 375px) {
+    .hamb-menu__link {
+      margin: 20px; } }
   .hamb-menu__link:after {
     content: "";
     display: block;
@@ -481,6 +486,9 @@ body {
     position: absolute;
     left: 50%;
     top: 200%; }
+    @media screen and (max-width: 375px) {
+      .hamb-menu__link:after {
+        top: 150%; } }
 
 .we-do__img img {
   width: 28.75rem; }
@@ -622,6 +630,9 @@ body {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
+  @media screen and (max-width: 480px) {
+    .descr_text {
+      line-height: 0.875rem; } }
 
 @media screen and (max-width: 480px) {
   .profit_img {
@@ -629,7 +640,10 @@ body {
 
 .burger__screen {
   background-color: rgba(0, 0, 0, 0.31);
-  background-image: url(../img/burger/burger-bg.jpg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #f9b43b), color-stop(40%, #eb8c38), color-stop(80%, #f9b43b));
+  background: -webkit-linear-gradient(bottom, #f9b43b 20%, #eb8c38 40%, #f9b43b 80%);
+  background: -o-linear-gradient(bottom, #f9b43b 20%, #eb8c38 40%, #f9b43b 80%);
+  background: linear-gradient(to top, #f9b43b 20%, #eb8c38 40%, #f9b43b 80%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -713,8 +727,8 @@ body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 5.625rem;
-  height: 5.625rem;
+  width: 5rem;
+  height: 5rem;
   background-color: #f08c33;
   border-radius: 5px;
   text-align: center;
@@ -724,7 +738,7 @@ body {
     display: block; }
   @media screen and (max-width: 480px) {
     .burger__ingridients {
-      top: 8%; } }
+      top: 10%; } }
 
 .ingridients__table {
   display: none;
@@ -789,7 +803,7 @@ td:nth-child(3) {
       left: 80%; } }
   @media screen and (max-width: 480px) {
     .burger__calories {
-      top: 6%;
+      top: 8%;
       right: 0;
       left: 76%; } }
 
@@ -1648,7 +1662,7 @@ td:nth-child(3) {
 
 @media screen and (max-width: 375px) {
   .row2, .row3, .row4 {
-    margin-top: 1.25rem; } }
+    margin-top: 0.4375rem; } }
 
 button.order {
   border-width: 0px;

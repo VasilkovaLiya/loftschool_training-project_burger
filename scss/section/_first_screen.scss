@@ -229,6 +229,9 @@
 	font-size: rem(24px);
 	//line-height: rem(40px);
 	position: relative;
+	@include phone--small {
+		margin: 20px;
+	}
 	&:after {
 	  content: "";
 	  display: block;
@@ -239,6 +242,9 @@
 		position: absolute;
 		left:50%;
 		top:200%;
+		@include phone--small {
+			top:150%;
+		}
 	}
 }
 

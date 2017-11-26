@@ -86,7 +86,7 @@
 .descr_text {
       @include text;
       @include phone {
-          //overflow: scroll;
+         line-height: rem(14px);
       }
 }
 
